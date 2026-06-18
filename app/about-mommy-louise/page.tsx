@@ -143,13 +143,13 @@ export default function AboutPage() {
             </p>
 
             {/* Hero Image */}
-            <div className="rounded-lg overflow-hidden shadow-lg mb-12" style={{ aspectRatio: '800/1200' }}>
+            <div className="rounded-2xl overflow-hidden shadow-lg mb-12" style={{ aspectRatio: '800/1200' }}>
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc004f790a7d541e78e49855898a5d267?format=webp&width=800&height=1200"
                 alt="Mommy Louise teaching budgeting and cash stuffing methods for Filipino families"
                 width={800}
                 height={1200}
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain rounded-2xl"
                 priority
                 quality={85}
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, 672px"
