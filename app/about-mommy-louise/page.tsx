@@ -45,6 +45,13 @@ const personSchema = {
     'https://www.tiktok.com/@mommylouiseee',
     'https://www.youtube.com/channel/UCHFl5W8x4mgy5LiEkiu0UCw',
   ],
+  image: {
+    '@type': 'ImageObject',
+    url: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc004f790a7d541e78e49855898a5d267?format=webp&width=800&height=1200',
+    width: 800,
+    height: 1200,
+    description: 'Mommy Louise teaching budgeting and cash stuffing methods for Filipino families',
+  },
   mainEntity: {
     '@type': 'Organization',
     name: 'Mommy Louise Budget PH',
@@ -136,15 +143,16 @@ export default function AboutPage() {
             </p>
 
             {/* Hero Image */}
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg mb-12">
+            <div className="rounded-2xl overflow-hidden shadow-lg mb-12" style={{ aspectRatio: '800/1200' }}>
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc004f790a7d541e78e49855898a5d267?format=webp&width=800&height=1200"
                 alt="Mommy Louise teaching budgeting and cash stuffing methods for Filipino families"
                 width={800}
                 height={1200}
-                className="w-full h-auto object-cover"
+                className="w-full h-full object-cover rounded-2xl"
                 priority
-                sizes="(max-width: 768px) 100vw, 672px"
+                quality={85}
+                sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, 672px"
                 unoptimized
               />
             </div>
