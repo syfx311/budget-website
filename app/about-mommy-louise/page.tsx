@@ -136,13 +136,13 @@ export default function AboutPage() {
             </p>
 
             {/* Hero Image */}
-            <div className="aspect-video rounded-lg overflow-hidden shadow-lg mb-12">
+            <div className="rounded-lg overflow-hidden shadow-lg mb-12">
               <Image
                 src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc004f790a7d541e78e49855898a5d267?format=webp&width=800&height=1200"
                 alt="Mommy Louise teaching budgeting and cash stuffing methods for Filipino families"
                 width={800}
                 height={1200}
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-contain"
                 priority
                 sizes="(max-width: 768px) 100vw, 672px"
                 unoptimized
