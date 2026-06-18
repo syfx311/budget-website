@@ -149,7 +149,7 @@ export default function AboutPage() {
                 alt="Mommy Louise teaching budgeting and cash stuffing methods for Filipino families"
                 width={800}
                 height={1200}
-                className="w-full h-full object-contain rounded-2xl"
+                className="w-full h-full object-cover rounded-2xl"
                 priority
                 quality={85}
                 sizes="(max-width: 640px) 100vw, (max-width: 768px) 90vw, 672px"
