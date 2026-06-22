@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import Image from 'next/image'
-import { Facebook, Youtube, ShoppingBag } from 'lucide-react'
+import { Facebook, Youtube, ShoppingBag, Mail } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { motion } from 'framer-motion'
 
@@ -322,6 +322,15 @@ export function Footer() {
                 aria-label="Visit our YouTube channel"
               >
                 <Youtube className="h-5 w-5" />
+              </motion.a>
+              <motion.a
+                href="mailto:admin.mommylouisebudgetph@gmail.com"
+                className="text-muted-foreground hover:text-primary transition-colors"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                aria-label="Email us"
+              >
+                <Mail className="h-5 w-5" />
               </motion.a>
             </div>
           </div>
