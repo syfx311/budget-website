@@ -76,11 +76,9 @@ export const metadata: Metadata = {
     creator: '@mommylouiseee',
   },
   icons: {
-    icon: [
-      { url: '/favicon.ico' },
-      { url: '/icon.svg', type: 'image/svg+xml' },
-    ],
-    apple: '/apple-icon.png',
+    icon: 'https://mommylouisebudgetph.com/favicon.ico',
+    shortcut: 'https://mommylouisebudgetph.com/favicon.ico',
+    apple: 'https://mommylouisebudgetph.com/favicon.ico',
   },
   manifest: '/site.webmanifest',
 }
