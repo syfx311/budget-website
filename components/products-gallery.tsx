@@ -30,6 +30,17 @@ const binderTiles = [
 const products = [
   {
     id: 1,
+    title: 'Cherry Red Budget Binder',
+    description: 'Luxurious cherry red textured binder with gold hardware and beautiful accessories',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fa9c6472629114ca1b36477e17b0ff19c?format=webp&width=800&height=1200',
+    tiles: binderTiles,
+    features: ['Cherry Red Textured Material', 'Gold Hardware', 'Pearl Accessories', 'Perfect Organization'],
+    badge: 'New',
+    fullDescription: 'Stunning cherry red budget binder featuring premium textured material with elegant gold hardware and pearl beaded accessories. Includes coordinating envelopes, inserts, and organizational tools. Perfect for stylish budget planning with a gingham bow accent and comprehensive budgeting system.',
+    colors: ['Cherry Red', 'Gold', 'White'],
+  },
+  {
+    id: 2,
     title: 'Transparent Pink Planner Case',
     description: 'Premium transparent planner with elegant gold accessories and pearl details',
     image: '/images/best-seller-product.jpg',
@@ -40,7 +51,7 @@ const products = [
     colors: ['Rose Pink', 'Gold', 'Pearl White'],
   },
   {
-    id: 2,
+    id: 3,
     title: 'Premium Budget Binders',
     description: 'High-quality binders designed for comprehensive budget planning',
     image: '/images/best-seller-product-2.jpg',
@@ -50,7 +61,7 @@ const products = [
     colors: ['Cream', 'Pink', 'Lavender'],
   },
   {
-    id: 3,
+    id: 4,
     title: 'Quilted Budget Organizer',
     description: 'Premium quilted planner with rose gold hardware for organized budgeting',
     image: '/images/popular-product-planner.jpg',
@@ -60,7 +71,7 @@ const products = [
     colors: ['Rose Pink', 'Cream', 'Lavender'],
   },
   {
-    id: 4,
+    id: 5,
     title: 'Luxury Textured Wallet',
     description: 'Premium envelope-style wallet with elegant accessories included',
     image: '/images/new-product-wallet.jpg',
@@ -70,7 +81,7 @@ const products = [
     colors: ['Rose Pink', 'Cream', 'Taupe'],
   },
   {
-    id: 5,
+    id: 6,
     title: 'Custom Personalized Folding Wallet',
     description: 'Premium pink textured wallet with custom embroidered personalization',
     image: '/images/premium-personalized-wallet.jpg',
@@ -80,7 +91,7 @@ const products = [
     colors: ['Rose Pink', 'Cream', 'Lavender'],
   },
   {
-    id: 6,
+    id: 7,
     title: 'Quilted Basket Budget Bundle',
     description: 'Beautiful white quilted basket filled with premium budget planning essentials',
     image: '/images/desk-organizer-bundle.jpg',
@@ -90,7 +101,7 @@ const products = [
     colors: ['White', 'Pink & Purple', 'Rose Gold'],
   },
   {
-    id: 7,
+    id: 9,
     title: 'Pink Aesthetic Calculator',
     description: 'Charming rose gold calculator with elegant functionality for budgeting',
     image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fdc2ae072ea224b2c84699401edae6d8d?format=webp&width=800&height=1200',
@@ -100,7 +111,7 @@ const products = [
     colors: ['Rose Gold', 'White'],
   },
   {
-    id: 8,
+    id: 10,
     title: 'Luxury Budget Planner Notebook',
     description: 'Spiral-bound planner with beautiful aesthetic design and gold accents',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/718992680_2341959046333111_7678009458581102771_n-DSR77isVR6sCcAdCUnKWEOcnmAqYav.jpg',
@@ -110,7 +121,7 @@ const products = [
     colors: ['Rose Pink', 'Gold', 'Cream'],
   },
   {
-    id: 9,
+    id: 11,
     title: 'Pearl Bow Keychain',
     description: 'Elegant pearl beaded keychain with pink silk bow and gold hardware',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/718906627_1553259506409849_3044130603844716871_n-eVHiL1v33LHqFkGl6FRWTozKRtcY3D.jpg',
@@ -120,7 +131,7 @@ const products = [
     colors: ['Pink', 'Pearl White', 'Gold'],
   },
   {
-    id: 10,
+    id: 12,
     title: 'Pearl Beaded Keychains Collection',
     description: 'Set of elegant pearl keychains with various decorative accents',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/719451576_994369263182244_9033156054942415693_n-1qStN7Cm4jXQOezvKpXyrfaFXY265g.jpg',
@@ -130,7 +141,7 @@ const products = [
     colors: ['Pearl White', 'Gold', 'Cream'],
   },
   {
-    id: 11,
+    id: 13,
     title: 'Silk Bow Keychain Charm',
     description: 'Elegant large pink silk bow with gold ring charm',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/718456581_3966619156965800_5687798835831382895_n-63oMRswruDX491EMV4sNFPsHJEQSwc.jpg',
@@ -140,7 +151,7 @@ const products = [
     colors: ['Pink', 'Gold', 'Rose'],
   },
   {
-    id: 12,
+    id: 14,
     title: 'Pearl Beaded Charm Bracelet',
     description: 'Elegant pearl bracelet with luxury gold charms and accessories',
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/720971409_27940712228869890_8117391084618456357_n-gFioN2lArFpztWPZ7TfQimny6mRpux.jpg',
