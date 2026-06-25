@@ -33,6 +33,10 @@ const products = [
     title: 'Cherry Red Budget Binder',
     description: 'Luxurious cherry red textured binder with gold hardware and beautiful accessories',
     image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fa9c6472629114ca1b36477e17b0ff19c?format=webp&width=800&height=1200',
+    images: [
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fa9c6472629114ca1b36477e17b0ff19c?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F70a2c211aa074b62b9679affa4af7338?format=webp&width=800&height=1200',
+    ],
     tiles: binderTiles,
     features: ['Cherry Red Textured Material', 'Gold Hardware', 'Pearl Accessories', 'Perfect Organization'],
     badge: 'New',
@@ -199,6 +203,7 @@ interface SelectedProduct {
   title: string
   description: string
   image: string
+  images?: string[]
   tiles?: string[]
   features: string[]
   badge: string
@@ -236,25 +241,50 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
             </div>
 
             <div className="p-4 md:p-6 lg:p-8">
-              {/* Product Image */}
-              <div className="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-primary/5 to-accent/5">
-                <Image
-                  src={product.image}
-                  alt={product.title}
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 400px"
-                  unoptimized={product.image.startsWith('http')}
-                />
-                {product.badge && (
-                  <div className="absolute top-4 left-4">
-                    <span className="inline-flex items-center gap-1 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
-                      <Sparkles className="w-4 h-4" />
-                      {product.badge}
-                    </span>
-                  </div>
-                )}
-              </div>
+              {/* Product Images */}
+              {product.images && product.images.length > 0 ? (
+                <div className={`grid gap-4 mb-6 ${product.images.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                  {product.images.map((img, idx) => (
+                    <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+                      <Image
+                        src={img}
+                        alt={`${product.title} - View ${idx + 1}`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 300px"
+                        unoptimized={img.startsWith('http')}
+                      />
+                      {idx === 0 && product.badge && (
+                        <div className="absolute top-4 left-4">
+                          <span className="inline-flex items-center gap-1 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                            <Sparkles className="w-4 h-4" />
+                            {product.badge}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div className="relative aspect-square rounded-2xl overflow-hidden mb-6 bg-gradient-to-br from-primary/5 to-accent/5">
+                  <Image
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 400px"
+                    unoptimized={product.image.startsWith('http')}
+                  />
+                  {product.badge && (
+                    <div className="absolute top-4 left-4">
+                      <span className="inline-flex items-center gap-1 bg-primary text-primary-foreground px-3 py-1 rounded-full text-sm font-medium">
+                        <Sparkles className="w-4 h-4" />
+                        {product.badge}
+                      </span>
+                    </div>
+                  )}
+                </div>
+              )}
 
               {/* Product Details */}
               <h2 className="font-noto-sans text-3xl md:text-4xl text-foreground mb-4">
