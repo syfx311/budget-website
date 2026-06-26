@@ -29,6 +29,22 @@ const binderTiles = [
 
 const products = [
   {
+    id: 0,
+    title: 'Prestige A6 Zipper Binder',
+    description: 'Premium A6 zippered budget binder with gold 6-ring mechanism and customizable inserts',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F2ce14f5a589543cba964ffd97c02f51d?format=webp&width=800&height=1200',
+    images: [
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F2ce14f5a589543cba964ffd97c02f51d?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F3726de103edd49a78e691ac6413c3d11?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fe9c523ed6afc4740ab32b7b7a16b355e?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ffc07cd26b19a47aaa8ba264b7babcdd8?format=webp&width=800&height=1200',
+    ],
+    features: ['Premium A6 Zip-Around Binder', 'Gold 6-Ring Mechanism', 'Customizable Dashboard', 'Customizable Inserts', 'Perfect for Cash Stuffing & Sinking Funds'],
+    badge: 'New',
+    fullDescription: 'Say hello to the newest addition to our budget binder collection—Prestige. A premium A6 zippered budget binder designed for budgeters who love both functionality and elegance. Keep your cash, envelopes, and budgeting essentials secure while enjoying a sleek and luxurious look. Features a premium A6 zip-around design with gold 6-ring mechanism, customizable dashboard made by me, and customizable inserts based on your budgeting needs. Perfect for cash stuffing, sinking funds, savings challenges, and daily budget planning. Because budgeting should not only keep you organized—it should also reflect your style.',
+    colors: ['Lavender', 'Pink', 'Sage Green'],
+  },
+  {
     id: 1,
     title: 'Cherry Red Budget Binder',
     description: 'Luxurious cherry red textured binder with gold hardware and beautiful accessories',
@@ -243,7 +259,7 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
             <div className="p-4 md:p-6 lg:p-8">
               {/* Product Images */}
               {product.images && product.images.length > 0 ? (
-                <div className={`grid gap-4 mb-6 ${product.images.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
+                <div className={`grid gap-4 mb-6 ${product.images.length >= 4 ? 'grid-cols-2' : product.images.length === 2 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                   {product.images.map((img, idx) => (
                     <div key={idx} className="relative aspect-square rounded-2xl overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
                       <Image
