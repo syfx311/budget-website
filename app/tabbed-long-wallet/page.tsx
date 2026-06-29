@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     url: '/tabbed-long-wallet',
     images: [
       {
-        url: '/images/wallet-1.jpg',
+        url: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
         width: 1200,
         height: 1200,
         alt: 'Tabbed Long Wallet - Mommy Louise Budget PH',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tabbed Long Wallet | Cash Stuffing Budget Wallet',
     description: 'Elegant budget wallet with labeled tabs. Pre-order now for Mid-July delivery.',
-    images: ['/images/wallet-1.jpg'],
+    images: ['https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200'],
   },
   alternates: {
     canonical: 'https://mommylouisebudgetph.com/tabbed-long-wallet',
@@ -55,7 +55,10 @@ export default function TabbedLongWalletPage() {
       '@type': 'Brand',
       name: 'Mommy Louise Budget PH',
     },
-    image: ['/images/wallet-1.jpg', '/images/wallet-2.jpg'],
+    image: [
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f3b5baede4679b3bbcb157f95b97e?format=webp&width=800&height=1200',
+    ],
     offers: {
       '@type': 'AggregateOffer',
       availability: 'https://schema.org/PreOrder',

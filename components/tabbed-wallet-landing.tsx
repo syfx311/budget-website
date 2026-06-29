@@ -49,16 +49,17 @@ export function TabbedWalletLanding() {
               className="space-y-4"
             >
               <button
-                onClick={() => setEnlargedImage('/images/wallet-1.jpg')}
+                onClick={() => setEnlargedImage('https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200')}
                 className="relative aspect-square overflow-hidden rounded-3xl shadow-2xl border border-border/50 group cursor-pointer w-full"
               >
                 <Image
-                  src="/images/wallet-1.jpg"
-                  alt="Tabbed Long Wallet - Closed View"
+                  src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200"
+                  alt="Tabbed Long Wallet - Closed View in Blush Pink"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   priority
                   sizes="(max-width: 768px) 100vw, 50vw"
+                  unoptimized
                 />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                   <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -66,15 +67,16 @@ export function TabbedWalletLanding() {
               </button>
               <div>
                 <button
-                  onClick={() => setEnlargedImage('/images/wallet-2.jpg')}
+                  onClick={() => setEnlargedImage('https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f3b5baede4679b3bbcb157f95b97e?format=webp&width=800&height=1200')}
                   className="relative aspect-square overflow-hidden rounded-2xl shadow-lg border border-border/50 group cursor-pointer w-full"
                 >
                   <Image
-                    src="/images/wallet-2.jpg"
-                    alt="Tabbed Long Wallet - Interior with Dividers"
+                    src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f3b5baede4679b3bbcb157f95b97e?format=webp&width=800&height=1200"
+                    alt="Tabbed Long Wallet - Interior with Budget Tabs in Blush Pink"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, 25vw"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-300 flex items-center justify-center">
                     <ZoomIn className="w-6 h-6 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -215,11 +217,12 @@ export function TabbedWalletLanding() {
               className="relative h-96 rounded-2xl overflow-hidden shadow-2xl border border-border/50"
             >
               <Image
-                src="/images/wallet-2.jpg"
-                alt="Wallet interior with organized budget tabs"
+                src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f3b5baede4679b3bbcb157f95b97e?format=webp&width=800&height=1200"
+                alt="Wallet interior with organized budget tabs in Blush Pink"
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
+                unoptimized
               />
             </motion.div>
           </div>
@@ -242,13 +245,13 @@ export function TabbedWalletLanding() {
                 id: 'blush',
                 name: 'Blush Pink',
                 desc: 'Soft, feminine, timeless.',
-                image: '/images/wallet-1.jpg',
+                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
               },
               {
                 id: 'beige',
                 name: 'Beige',
                 desc: 'Clean, classic, and minimalist.',
-                image: '/images/wallet-2.jpg',
+                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Feadbca2e8db440ceaa61b46e30cc971d?format=webp&width=800&height=1200',
               },
             ].map((color) => (
               <motion.button
@@ -268,6 +271,7 @@ export function TabbedWalletLanding() {
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, 50vw"
+                    unoptimized
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-6">
                     <h3 className="text-2xl font-semibold text-white font-noto-sans">{color.name}</h3>
@@ -329,11 +333,12 @@ export function TabbedWalletLanding() {
             className="relative h-96 rounded-3xl overflow-hidden shadow-2xl"
           >
             <Image
-              src="/images/wallet-1.jpg"
-              alt="Tabbed Long Wallet lifestyle shot - elegant and organized"
+              src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200"
+              alt="Tabbed Long Wallet lifestyle shot - elegant and organized in Blush Pink"
               fill
               className="object-cover"
               sizes="100vw"
+              unoptimized
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-black/30 flex flex-col justify-center items-start p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-semibold text-white mb-4 font-signature max-w-2xl">

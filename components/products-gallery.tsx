@@ -32,10 +32,10 @@ const products = [
     id: -1,
     title: 'Tabbed Long Wallet',
     description: 'Elegant long wallet with labeled budget tabs for organized cash stuffing',
-    image: '/images/wallet-1.jpg',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
     images: [
-      '/images/wallet-1.jpg',
-      '/images/wallet-2.jpg',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
+      'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f3b5baede4679b3bbcb157f95b97e?format=webp&width=800&height=1200',
     ],
     features: ['Long wallet design', 'Labeled budgeting tabs', 'Multiple card slots', 'Spacious cash compartment', 'Durable premium materials'],
     badge: 'New',
