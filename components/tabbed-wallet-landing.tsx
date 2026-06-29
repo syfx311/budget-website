@@ -245,7 +245,7 @@ export function TabbedWalletLanding() {
                 id: 'blush',
                 name: 'Blush Pink',
                 desc: 'Soft, feminine, timeless.',
-                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F725333fb26e64e46a0624eacebf950b6?format=webp&width=800&height=1200',
+                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F8955c5eb5cfa4bbe9b13b4e9ade66e9a?format=webp&width=800&height=1200',
               },
               {
                 id: 'beige',
