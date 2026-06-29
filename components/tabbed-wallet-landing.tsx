@@ -251,7 +251,7 @@ export function TabbedWalletLanding() {
                 id: 'beige',
                 name: 'Beige',
                 desc: 'Clean, classic, and minimalist.',
-                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Feadbca2e8db440ceaa61b46e30cc971d?format=webp&width=800&height=1200',
+                image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F0e15929160c24159a65b44a98254a0d5?format=webp&width=800&height=1200',
               },
             ].map((color) => (
               <motion.button
