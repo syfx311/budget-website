@@ -29,6 +29,20 @@ const binderTiles = [
 
 const products = [
   {
+    id: -1,
+    title: 'Tabbed Long Wallet',
+    description: 'Elegant long wallet with labeled budget tabs for organized cash stuffing',
+    image: '/images/wallet-1.jpg',
+    images: [
+      '/images/wallet-1.jpg',
+      '/images/wallet-2.jpg',
+    ],
+    features: ['Long wallet design', 'Labeled budgeting tabs', 'Multiple card slots', 'Spacious cash compartment', 'Durable premium materials'],
+    badge: 'New',
+    fullDescription: 'The Tabbed Long Wallet is the perfect companion for every budgeting enthusiast. Designed specifically for cash stuffing and envelope budgeting, this beautifully crafted long wallet features six labeled tabs (Grocery, Food, Shopping, Fun, Bills, Miscellaneous) to keep your spending categories organized. Stylish on the outside, functional on the inside. Available in Blush Pink and Beige. Pre-order now for Mid-July delivery.',
+    colors: ['Blush Pink', 'Beige'],
+  },
+  {
     id: 0,
     title: 'Prestige A6 Zipper Binder',
     description: 'Premium A6 zippered budget binder with gold 6-ring mechanism and customizable inserts',
