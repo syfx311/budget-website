@@ -162,14 +162,14 @@ export function Hero() {
               className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-                <Button 
-                  asChild 
-                  size="lg" 
+                <Button
+                  asChild
+                  size="lg"
                   className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 rounded-full"
                 >
-                  <Link href="/app" className="flex items-center gap-2">
+                  <Link href="/tabbed-long-wallet" className="flex items-center gap-2">
                     <Sparkles className="h-4 w-4" />
-                    New App Launch
+                    Featured Product
                   </Link>
                 </Button>
               </motion.div>

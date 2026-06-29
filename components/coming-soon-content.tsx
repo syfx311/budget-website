@@ -33,9 +33,9 @@ export function ComingSoonContent() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="font-signature text-4xl md:text-5xl lg:text-6xl text-center mb-1 text-foreground"
+          className="font-signature text-4xl md:text-5xl lg:text-6xl text-center mb-2 text-foreground"
         >
-          mommy louise
+          Tabbed Long Wallet
         </motion.h1>
 
         <motion.p
@@ -44,7 +44,7 @@ export function ComingSoonContent() {
           transition={{ delay: 0.2 }}
           className="text-center text-lg font-noto-sans text-primary mb-6 font-semibold"
         >
-          Budget Wallet Collection
+          Stay Stylish. Stay Organized.
         </motion.p>
 
         {/* Subheadline */}
@@ -54,7 +54,7 @@ export function ComingSoonContent() {
           transition={{ delay: 0.25 }}
           className="text-center text-foreground/80 mb-8 text-base leading-relaxed font-noto-sans"
         >
-          Beautifully crafted wallets with premium materials and elegant design. Perfect for organizing your budget categories in style.
+          The perfect companion for every budgeting enthusiast. Designed to keep your finances organized while adding a touch of elegance to your everyday essentials. Whether you're using the cash stuffing method or simply want a more organized wallet, this beautifully crafted long wallet helps you manage your budget with ease.
         </motion.p>
 
         {/* Product Images */}
@@ -103,20 +103,54 @@ export function ComingSoonContent() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.35 }}
-          className="space-y-2 mb-8"
+          className="mb-8"
         >
-          <FeatureBullet text="Premium textured materials" />
-          <FeatureBullet text="Custom budget categories" />
-          <FeatureBullet text="Compact & stylish design" />
-          <FeatureBullet text="Perfect for cash envelope method" />
+          <h3 className="text-lg font-semibold text-foreground mb-4 font-noto-sans">Features</h3>
+          <div className="space-y-2 mb-6">
+            <FeatureBullet text="Elegant and minimalist design" />
+            <FeatureBullet text="Available in Blush Pink and Beige" />
+            <FeatureBullet text="Labeled budget tabs for easy organization" />
+            <FeatureBullet text="Spacious compartments for cash, cards, and budgeting essentials" />
+          </div>
+
+          <h3 className="text-lg font-semibold text-foreground mb-4 font-noto-sans">Budget Tabs Included</h3>
+          <div className="space-y-2 mb-6">
+            <FeatureBullet text="Grocery" />
+            <FeatureBullet text="Food" />
+            <FeatureBullet text="Shopping" />
+            <FeatureBullet text="Fun" />
+            <FeatureBullet text="Bills" />
+            <FeatureBullet text="Miscellaneous" />
+          </div>
+
+          <h3 className="text-lg font-semibold text-foreground mb-4 font-noto-sans">Why You'll Love It</h3>
+          <p className="text-foreground/80 text-sm font-noto-sans leading-relaxed mb-6">
+            Beautiful on the outside, organized on the inside. The Tabbed Long Wallet makes budgeting more enjoyable by keeping your spending categories neat and easily accessible. It's the perfect everyday wallet for anyone who values both functionality and style.
+          </p>
+
+          <h3 className="text-lg font-semibold text-foreground mb-4 font-noto-sans">Pre-Order Information</h3>
+          <div className="space-y-2">
+            <div className="flex gap-3 text-sm">
+              <span className="font-semibold text-foreground min-w-fit">Availability:</span>
+              <span className="text-foreground/80">Pre-Order</span>
+            </div>
+            <div className="flex gap-3 text-sm">
+              <span className="font-semibold text-foreground min-w-fit">Estimated Arrival:</span>
+              <span className="text-foreground/80">Mid-July</span>
+            </div>
+          </div>
         </motion.div>
 
-        {/* CTA Button */}
+        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
+          className="space-y-3"
         >
+          <p className="text-center text-foreground/80 text-sm font-noto-sans mb-4">
+            Reserve yours today and take the first step toward smarter, more stylish budgeting.
+          </p>
           <Button
             asChild
             className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full py-6 text-lg font-semibold flex items-center justify-center gap-2 shadow-lg hover:shadow-xl transition-all"
