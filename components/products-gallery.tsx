@@ -406,9 +406,9 @@ export function ProductsGallery() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section id="products" className="py-20 md:py-28 relative overflow-hidden">
+    <section id="products" className="premium-catalog-section py-20 md:py-28 relative overflow-hidden">
       {/* Gingham Background */}
-      <div className="absolute inset-0 gingham-pattern opacity-30" />
+      <div className="premium-catalog-background absolute inset-0 gingham-pattern opacity-30" />
 
       {/* Decorative Elements */}
       <motion.div
@@ -433,7 +433,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="premium-catalog-heading text-center mb-12"
         >
           <div className="flex items-center justify-center gap-4 mb-3">
             <Bow className="w-12 h-8 text-primary" />
@@ -470,7 +470,7 @@ export function ProductsGallery() {
         {/* Product Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="premium-catalog-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <AnimatePresence mode="popLayout">
             {products.map((product, index) => (
@@ -488,9 +488,9 @@ export function ProductsGallery() {
                 }}
                 className="cursor-pointer"
               >
-                <div className="bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                <div className="premium-catalog-card bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
                   {/* Image Container */}
-                  <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+                  <div className="premium-catalog-image relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
                     <Image
                       src={product.image}
                       alt={product.title}
@@ -511,7 +511,7 @@ export function ProductsGallery() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-4 flex-1 flex flex-col">
+                  <div className="premium-catalog-details p-4 flex-1 flex flex-col">
                     <h3 className="font-noto-sans text-lg text-foreground mb-1 line-clamp-2">
                       {product.title}
                     </h3>
@@ -602,7 +602,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
+          className="premium-catalog-cta mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
         >
           <h2 className="font-noto-sans text-2xl md:text-3xl text-foreground mb-4">
             Ready to Transform Your <span className="text-primary">Budget?</span>
