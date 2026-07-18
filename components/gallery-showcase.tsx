@@ -49,7 +49,7 @@ export function GalleryShowcase() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
+    <section className="gallery-showcase py-20 md:py-28 relative overflow-hidden">
       {/* Gingham Background */}
       <div className="absolute inset-0 gingham-pattern opacity-30" />
 
@@ -92,7 +92,7 @@ export function GalleryShowcase() {
                   setSelectedImage(image)
                   setIsModalOpen(true)
                 }}
-                className="relative aspect-square overflow-hidden rounded-2xl border border-primary/20 hover:border-primary/50 transition-all shadow-md hover:shadow-lg group bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50 w-full h-full"
+                className="gallery-showcase-card relative aspect-square overflow-hidden transition-all duration-200 group w-full h-full"
                 aria-label={`View ${image.alt}`}
               >
                 <Image
@@ -119,15 +119,15 @@ export function GalleryShowcase() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-16"
         >
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">31+</div>
             <div className="text-sm text-muted-foreground">Unique Designs</div>
           </div>
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">100%</div>
             <div className="text-sm text-muted-foreground">Customizable</div>
           </div>
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">Fast</div>
             <div className="text-sm text-muted-foreground">Delivery</div>
           </div>
@@ -147,7 +147,7 @@ export function GalleryShowcase() {
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Explore our full collection and find the perfect budget planner design for you.
           </p>
-          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium">
+          <a href="#contact" className="premium-button px-8">
             Get In Touch
           </a>
         </motion.div>

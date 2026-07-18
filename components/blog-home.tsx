@@ -64,7 +64,7 @@ export function BlogHome({ posts: initialPosts }: BlogHomeProps) {
                 placeholder="Search articles..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full pl-12 pr-4 py-3 rounded-lg border-2 border-border bg-background placeholder-muted-foreground focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary/20 transition-all"
+                className="premium-form-field w-full py-3 pl-12 pr-4 placeholder:text-muted-foreground"
               />
             </div>
           </motion.div>
@@ -80,11 +80,7 @@ export function BlogHome({ posts: initialPosts }: BlogHomeProps) {
           <div className="flex flex-wrap gap-3 mb-4">
             <button
               onClick={() => setSelectedCategory(null)}
-              className={`px-4 py-2 rounded-lg transition-colors font-medium text-sm ${
-                selectedCategory === null
-                  ? 'bg-primary text-primary-foreground'
-                  : 'bg-white dark:bg-slate-950 border border-border text-foreground hover:border-primary/50'
-              }`}
+              className="premium-chip px-4 py-2" data-active={selectedCategory === null}
             >
               All Articles
             </button>
@@ -92,11 +88,7 @@ export function BlogHome({ posts: initialPosts }: BlogHomeProps) {
               <button
                 key={category}
                 onClick={() => setSelectedCategory(category)}
-                className={`px-4 py-2 rounded-lg transition-colors font-medium text-sm ${
-                  selectedCategory === category
-                    ? 'bg-primary text-primary-foreground'
-                    : 'bg-white dark:bg-slate-950 border border-border text-foreground hover:border-primary/50'
-                }`}
+                className="premium-chip px-4 py-2" data-active={selectedCategory === category}
               >
                 {category}
               </button>
@@ -215,13 +207,13 @@ export function BlogHome({ posts: initialPosts }: BlogHomeProps) {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/products"
-                className="px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-semibold"
+                className="premium-button px-8"
               >
                 Shop Templates
               </Link>
               <Link
                 href="/"
-                className="px-8 py-4 border-2 border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors font-semibold"
+                className="inline-flex items-center justify-center rounded-full border border-[#d9d1cb] px-8 py-3 text-xs font-medium uppercase tracking-[0.08em] text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-[#c8a96a] hover:bg-[#f8f3ef]"
               >
                 Learn More
               </Link>

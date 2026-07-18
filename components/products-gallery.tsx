@@ -376,7 +376,7 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-3">
                   <Button
                     asChild
-                    className="flex-1 bg-gradient-to-r from-primary to-rose-500 hover:from-primary/90 hover:to-rose-600 text-primary-foreground rounded-full py-6 text-lg font-semibold"
+                    className="flex-1 py-6 text-base font-medium"
                   >
                     <Link
                       href="/orders"
@@ -389,7 +389,7 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
 
                   <Button
                     asChild
-                    className="flex-1 bg-pink-200/60 hover:bg-pink-300/60 text-foreground rounded-full py-6 text-lg font-semibold"
+                    className="flex-1 border border-[#d9d1cb] bg-transparent py-6 text-base font-medium text-foreground hover:bg-[#f8f3ef]"
                   >
                     <a
                       href="https://www.facebook.com/profile.php?id=100087797289721"
@@ -483,9 +483,9 @@ export function ProductsGallery() {
                 }}
                 className="cursor-pointer"
               >
-                <div className="premium-catalog-card bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                <div className="premium-catalog-card h-full overflow-hidden">
                   {/* Image Container */}
-                  <div className="premium-catalog-image relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+                  <div className="premium-catalog-image relative aspect-square overflow-hidden">
                     <Image
                       src={product.image}
                       alt={product.title}
@@ -531,7 +531,7 @@ export function ProductsGallery() {
                     <div className="mt-auto">
                       <Button
                         size="sm"
-                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
+                        className="w-full"
                       >
                         Inquire
                       </Button>
@@ -579,7 +579,7 @@ export function ProductsGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 + index * 0.1 }}
-              className="bg-card/80 backdrop-blur-sm rounded-2xl border border-primary/20 p-4 text-center"
+              className="gallery-stat-card p-4 text-center"
             >
               <div className="font-serif text-2xl md:text-3xl text-primary mb-1">
                 {stat.value}
@@ -597,7 +597,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="premium-catalog-cta mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
+          className="premium-catalog-cta mt-20 rounded-[20px] p-8 text-center md:p-12"
         >
           <h2 className="font-noto-sans text-2xl md:text-3xl text-foreground mb-4">
             Ready to Transform Your <span className="text-primary">Budget?</span>
@@ -607,7 +607,7 @@ export function ProductsGallery() {
           </p>
           <Button
             asChild
-            className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg"
+            className="px-8 py-6 text-base"
           >
             <Link href="#contact">Get Started Today</Link>
           </Button>

@@ -57,27 +57,12 @@ function DecorativeBow({ className = '' }: { className?: string }) {
 
 export function AppHero() {
   return (
-    <section className="relative pt-28 pb-20 md:pt-32 md:pb-32 overflow-hidden hero-section" style={{
-      backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F64760a9914d14ea2ab9d9fb5e2717772?format=webp&width=2400&height=3600)',
-      backgroundSize: 'cover',
-      backgroundPosition: 'center'
-    }}>
+    <section className="app-hero hero-section relative overflow-hidden pb-20 pt-28 md:pb-32 md:pt-32">
       {/* Strong fading white transparency mask across entire hero */}
-      <div
-        className="absolute inset-0 pointer-events-none"
-        style={{
-          background: 'linear-gradient(90deg, rgba(255,255,255,0.75) 0%, rgba(255,255,255,0.6) 20%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.15) 60%, rgba(255,255,255,0.02) 85%, transparent 100%)'
-        }}
-      />
+      <div className="app-hero-overlay app-hero-overlay-primary absolute inset-0 pointer-events-none" />
 
       {/* Extended fading white transparency mask - stronger left, fades right */}
-      <div
-        className="absolute left-0 top-0 bottom-0 pointer-events-none"
-        style={{
-          width: '100%',
-          background: 'linear-gradient(90deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.65) 20%, rgba(255,255,255,0.35) 45%, rgba(255,255,255,0.08) 70%, transparent 100%)'
-        }}
-      />
+      <div className="app-hero-overlay app-hero-overlay-secondary absolute bottom-0 left-0 top-0 pointer-events-none" />
 
       {/* Decorative bows */}
       <motion.div
@@ -112,11 +97,7 @@ export function AppHero() {
             variants={staggerContainer}
             initial="hidden"
             animate="visible"
-            className="flex-1 text-center lg:text-left relative z-20 rounded-2xl px-6 md:px-8 py-8 md:py-12 backdrop-blur-md md:backdrop-blur-none"
-            style={{
-              background: 'linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.08) 100%)',
-              backgroundImage: 'linear-gradient(90deg, rgba(255,255,255,0.55) 0%, rgba(255,255,255,0.4) 40%, rgba(255,255,255,0.08) 100%)'
-            }}
+            className="app-hero-copy relative z-20 flex-1 rounded-2xl px-6 py-8 text-center backdrop-blur-md md:px-8 md:py-12 md:backdrop-blur-none lg:text-left"
           >
             {/* Badge */}
             <motion.div 

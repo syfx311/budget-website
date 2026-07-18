@@ -37,17 +37,7 @@ export function BackToTop() {
           transition={{ duration: 0.2 }}
           onClick={scrollToTop}
           aria-label="Back to Top"
-          className="fixed z-40 bg-primary text-primary-foreground rounded-full shadow-lg transition-all duration-200 hover:shadow-2xl"
-          style={{
-            right: 'clamp(16px, 5vw, 24px)',
-            bottom: 'clamp(16px, 5vw, 24px)',
-            width: 'clamp(44px, 10vw, 56px)',
-            height: 'clamp(44px, 10vw, 56px)',
-            minWidth: '44px',
-            minHeight: '44px',
-            maxWidth: '56px',
-            maxHeight: '56px'
-          }}
+          className="back-to-top-control fixed z-40 rounded-full bg-primary text-primary-foreground shadow-lg transition-all duration-200 hover:shadow-2xl"
           whileHover={{
             scale: 1.12,
             boxShadow: '0 20px 40px rgba(232, 90, 143, 0.4)'
