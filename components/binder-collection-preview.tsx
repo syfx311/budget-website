@@ -94,7 +94,7 @@ export function BinderCollectionPreview() {
               <motion.div
                 key={idx}
                 variants={fadeInUp}
-                className="bg-card rounded-xl p-6 border-2 border-primary/10 hover:border-primary/30 transition-colors"
+                className="binder-benefit-card p-6 transition-shadow duration-200 hover:shadow-[0_16px_34px_rgba(57,43,35,0.1)]"
               >
                 <Icon className="w-8 h-8 text-primary mb-4" />
                 <h3 className="font-semibold text-foreground mb-2 text-lg">{benefit.title}</h3>
@@ -110,7 +110,7 @@ export function BinderCollectionPreview() {
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
           variants={staggerContainer}
-          className="bg-card rounded-2xl p-8 md:p-12 border-2 border-primary/10 mb-16 md:mb-20"
+          className="binder-feature-card p-8 md:p-12 mb-16 md:mb-20"
         >
           <motion.h2 
             variants={fadeInUp}
@@ -204,7 +204,7 @@ export function BinderCollectionPreview() {
           whileInView="visible"
           viewport={{ once: true }}
           variants={staggerContainer}
-          className="bg-primary/10 border-2 border-primary/20 rounded-2xl p-8 md:p-12 text-center"
+          className="rounded-[20px] bg-[#f6d9df] p-8 text-center md:p-12"
         >
           <motion.h2 
             variants={fadeInUp}
@@ -225,14 +225,14 @@ export function BinderCollectionPreview() {
           >
             <Link 
               href="/products"
-              className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground font-semibold rounded-lg hover:bg-primary/90 transition-colors"
+              className="premium-button px-8"
             >
               Shop Budget Binders
               <ArrowRight className="w-4 h-4 ml-2" />
             </Link>
             <Link 
               href="/budget-binder-philippines"
-              className="inline-flex items-center justify-center px-8 py-3 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/5 transition-colors"
+              className="inline-flex items-center justify-center rounded-full border border-[#d9d1cb] px-8 py-3 text-xs font-medium uppercase tracking-[0.08em] text-foreground transition-all duration-200 hover:-translate-y-0.5 hover:border-[#c8a96a] hover:bg-[#f8f3ef]"
             >
               Learn More
             </Link>

@@ -24,9 +24,9 @@ export function TabbedWalletLanding() {
   }
 
   return (
-    <>
+    <div className="wallet-product-page">
       {/* Hero Section */}
-      <section className="pt-20 pb-16 md:pb-32 px-4 sm:px-6 lg:px-8">
+      <section className="pt-24 pb-16 md:pb-32 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <motion.div
             initial={{ opacity: 0, y: -10 }}
@@ -168,7 +168,7 @@ export function TabbedWalletLanding() {
                 key={idx}
                 {...fadeInUp}
                 transition={{ delay: idx * 0.1 }}
-                className="p-6 bg-background rounded-2xl border border-border/50 shadow-sm hover:shadow-md transition-shadow"
+                className="premium-surface p-6 hover:shadow-[0_16px_34px_rgba(57,43,35,0.1)]"
               >
                 <feature.icon className="w-8 h-8 text-primary mb-4" />
                 <h3 className="text-lg font-semibold text-foreground mb-2 font-noto-sans">
@@ -364,7 +364,7 @@ export function TabbedWalletLanding() {
 
           <motion.div
             {...fadeInUp}
-            className="bg-background rounded-3xl border border-border/50 p-8 md:p-12 shadow-lg"
+            className="premium-surface p-8 md:p-12"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
               <div>
@@ -457,7 +457,7 @@ export function TabbedWalletLanding() {
                 <AccordionItem
                   key={idx}
                   value={`item-${idx}`}
-                  className="border border-border/50 rounded-lg px-6 py-3 data-[state=open]:bg-secondary/30"
+                  className="rounded-[20px] border border-[#ece7e2] bg-[#fffbf9] px-6 py-3 data-[state=open]:bg-[#f8f3ef]"
                 >
                   <AccordionTrigger className="text-lg font-semibold text-foreground hover:text-primary font-noto-sans">
                     {item.q}
@@ -473,7 +473,7 @@ export function TabbedWalletLanding() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 md:py-24 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: 'rgba(255, 222, 222, 1)' }}>
+      <section className="wallet-cta-section py-16 md:py-24 px-4 sm:px-6 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
           <motion.h2
             {...fadeInUp}
@@ -547,7 +547,7 @@ export function TabbedWalletLanding() {
           </motion.div>
         </>
       )}
-    </>
+    </div>
   )
 }
 

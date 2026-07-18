@@ -73,21 +73,14 @@ export function OrdersForm() {
           )}
 
           {/* Iframe container */}
-          <div className="bg-card border border-border/50 rounded-2xl overflow-hidden shadow-sm mb-6">
+          <div className="premium-surface mb-6 overflow-hidden">
             <div className="iframe-wrapper">
               <iframe
                 ref={iframeRef}
                 id="order-form-iframe"
                 src="https://order.mommylouisebudgetph.com/"
                 width="100%"
-                style={{
-                  height: '100vh',
-                  border: 'none',
-                  borderRadius: '16px',
-                  background: 'white',
-                  display: 'block',
-                  overflow: 'hidden'
-                }}
+                className="order-form-embed"
                 loading="lazy"
                 title="Mommy Louise Budget PH Order Form"
                 onError={() => setIframeError(true)}

@@ -42,6 +42,8 @@ const galleryImages = [
   { id: 29, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ffade6e36d83a469dbf339f05a884c795?format=webp&width=800&height=1200', alt: 'Budget Binder Flat Lay' },
   { id: 30, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F64739e329b1e4be3b7a8657cfd5220a0?format=webp&width=800&height=1200', alt: 'White Quilted Storage Organizer Basket' },
   { id: 31, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ff10588329d054c649ead706b8de1283e?format=webp&width=800&height=1200', alt: 'Coffee Aesthetic Budget Planning Setup' },
+  { id: 36, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F205bd6970476481d8b783f6f5a04046f?format=webp&width=800&height=1200', alt: 'Premium Pink A6 Binder with Bow Detail' },
+  { id: 37, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F768fc80d96f944d081587034dab2cdd3?format=webp&width=800&height=1200', alt: 'Pink A6 Scallop Binder with Gold Rings' },
 ]
 
 export function GalleryShowcase() {
@@ -49,7 +51,7 @@ export function GalleryShowcase() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section className="py-20 md:py-28 relative overflow-hidden">
+    <section className="gallery-showcase py-20 md:py-28 relative overflow-hidden">
       {/* Gingham Background */}
       <div className="absolute inset-0 gingham-pattern opacity-30" />
 
@@ -92,7 +94,7 @@ export function GalleryShowcase() {
                   setSelectedImage(image)
                   setIsModalOpen(true)
                 }}
-                className="relative aspect-square overflow-hidden rounded-2xl border border-primary/20 hover:border-primary/50 transition-all shadow-md hover:shadow-lg group bg-gradient-to-br from-rose-50 via-pink-50 to-amber-50 w-full h-full"
+                className="gallery-showcase-card relative aspect-square overflow-hidden transition-all duration-200 group w-full h-full"
                 aria-label={`View ${image.alt}`}
               >
                 <Image
@@ -119,15 +121,15 @@ export function GalleryShowcase() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-16"
         >
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">31+</div>
             <div className="text-sm text-muted-foreground">Unique Designs</div>
           </div>
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">100%</div>
             <div className="text-sm text-muted-foreground">Customizable</div>
           </div>
-          <div className="bg-card border border-primary/20 rounded-xl p-6 text-center">
+          <div className="gallery-stat-card p-6 text-center">
             <div className="text-3xl font-bold text-primary mb-2">Fast</div>
             <div className="text-sm text-muted-foreground">Delivery</div>
           </div>
@@ -147,7 +149,7 @@ export function GalleryShowcase() {
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Explore our full collection and find the perfect budget planner design for you.
           </p>
-          <a href="#contact" className="inline-flex items-center justify-center px-8 py-3 bg-primary text-primary-foreground rounded-full hover:bg-primary/90 transition-colors font-medium">
+          <a href="#contact" className="premium-button px-8">
             Get In Touch
           </a>
         </motion.div>

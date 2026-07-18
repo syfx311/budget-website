@@ -204,6 +204,26 @@ const products = [
     fullDescription: 'Turn small, consistent deposits into a meaningful savings goal with the 100 Envelope Challenge. A thoughtfully designed system that makes progress visible, motivating, and easy to enjoy.',
     colors: ['Blush Pink', 'Cream', 'Gold'],
   },
+  {
+    id: 16,
+    title: 'Premium A6 Binder',
+    description: 'A soft pink A6 binder with a polished bow detail and organized interior',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F205bd6970476481d8b783f6f5a04046f?format=webp&width=800&height=1200',
+    features: ['Premium A6 Design', 'Multiple Card Slots', 'Durable Construction', 'Everyday Organization'],
+    badge: 'New',
+    fullDescription: 'A premium A6 binder designed to keep budgeting essentials beautifully organized. Its soft pink finish, practical storage, and durable construction make it an elegant everyday companion.',
+    colors: ['Blush Pink', 'Gold', 'Cream'],
+  },
+  {
+    id: 17,
+    title: 'A6 Scallop Binder',
+    description: 'A feminine A6 binder with a scalloped edge, gold rings, and flexible storage',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F768fc80d96f944d081587034dab2cdd3?format=webp&width=800&height=1200',
+    features: ['Scallop Edge Detail', 'Premium Gold Rings', 'Card and ID Slots', 'Secure Snap Closure'],
+    badge: 'New',
+    fullDescription: 'A beautifully detailed A6 scallop binder that combines a soft pink finish with premium gold rings and thoughtful storage. Made for a polished, practical budgeting routine.',
+    colors: ['Blush Pink', 'Gold', 'Cream'],
+  },
 ]
 
 function Bow({ className = '' }: { className?: string }) {
@@ -376,7 +396,7 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
                 <div className="flex flex-col gap-3 sm:flex-row sm:gap-3">
                   <Button
                     asChild
-                    className="flex-1 bg-gradient-to-r from-primary to-rose-500 hover:from-primary/90 hover:to-rose-600 text-primary-foreground rounded-full py-6 text-lg font-semibold"
+                    className="flex-1 py-6 text-base font-medium"
                   >
                     <Link
                       href="/orders"
@@ -389,7 +409,7 @@ function ProductDetailModal({ product, isOpen, onClose }: { product: SelectedPro
 
                   <Button
                     asChild
-                    className="flex-1 bg-pink-200/60 hover:bg-pink-300/60 text-foreground rounded-full py-6 text-lg font-semibold"
+                    className="flex-1 border border-[#d9d1cb] bg-transparent py-6 text-base font-medium text-foreground hover:bg-[#f8f3ef]"
                   >
                     <a
                       href="https://www.facebook.com/profile.php?id=100087797289721"
@@ -483,9 +503,9 @@ export function ProductsGallery() {
                 }}
                 className="cursor-pointer"
               >
-                <div className="premium-catalog-card bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                <div className="premium-catalog-card h-full overflow-hidden">
                   {/* Image Container */}
-                  <div className="premium-catalog-image relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+                  <div className="premium-catalog-image relative aspect-square overflow-hidden">
                     <Image
                       src={product.image}
                       alt={product.title}
@@ -531,7 +551,7 @@ export function ProductsGallery() {
                     <div className="mt-auto">
                       <Button
                         size="sm"
-                        className="w-full bg-primary hover:bg-primary/90 text-primary-foreground rounded-full"
+                        className="w-full"
                       >
                         Inquire
                       </Button>
@@ -579,7 +599,7 @@ export function ProductsGallery() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 + index * 0.1 }}
-              className="bg-card/80 backdrop-blur-sm rounded-2xl border border-primary/20 p-4 text-center"
+              className="gallery-stat-card p-4 text-center"
             >
               <div className="font-serif text-2xl md:text-3xl text-primary mb-1">
                 {stat.value}
@@ -597,7 +617,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="premium-catalog-cta mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
+          className="premium-catalog-cta mt-20 rounded-[20px] p-8 text-center md:p-12"
         >
           <h2 className="font-noto-sans text-2xl md:text-3xl text-foreground mb-4">
             Ready to Transform Your <span className="text-primary">Budget?</span>
@@ -607,7 +627,7 @@ export function ProductsGallery() {
           </p>
           <Button
             asChild
-            className="bg-primary hover:bg-primary/90 text-primary-foreground rounded-full px-8 py-6 text-lg"
+            className="px-8 py-6 text-base"
           >
             <Link href="#contact">Get Started Today</Link>
           </Button>

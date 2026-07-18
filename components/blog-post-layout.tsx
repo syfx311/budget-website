@@ -97,7 +97,7 @@ export function BlogPostLayout({
 
       {/* Content */}
       <article className="py-16 md:py-24 bg-background">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8" style={{ maxWidth: '720px' }}>
+        <div className="blog-article-frame mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
