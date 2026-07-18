@@ -10,7 +10,7 @@ const collections = [
   { title: 'Budget Wallets', detail: 'Beautiful organization for every peso.', image: '/images/binder-pink-pebbled-wallet.jpg', href: '/products' },
   { title: 'Savings Challenges', detail: 'Small, intentional steps toward more.', image: '/images/binder-elope-savings-challenge.png', href: '/products' },
   { title: 'Digital Downloads', detail: 'Thoughtfully designed for your routine.', image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/719300983_2229962241136947_588258290332643950_n-qhHX980pLADI8d1Gs9BqvXp6skJj1Q.jpg', href: '/products' },
-  { title: 'Personalized Items', detail: 'Made distinctly yours.', image: '/images/premium-personalized-wallet.jpg', href: '/products' },
+  { title: 'Personalized Items', detail: 'Made distinctly yours.', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f5d33b6ad47d7abdff42ef4fbffa3?format=webp&width=800&height=1200', href: '/products' },
 ]
 
 const products = [
