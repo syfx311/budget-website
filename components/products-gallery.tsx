@@ -194,6 +194,16 @@ const products = [
     fullDescription: 'Stunning pearl beaded charm bracelet featuring luxurious gold hardware and beautiful pearl accents. Perfect for everyday elegance or special occasions. Each pearl is carefully selected for quality, making this a timeless accessory.',
     colors: ['Pearl White', 'Gold', 'Cream'],
   },
+  {
+    id: 15,
+    title: '100 Envelope Challenge',
+    description: 'A beautiful savings challenge to make consistent progress feel rewarding',
+    image: '/images/binder-elope-challenge-accessories.png',
+    features: ['100 Savings Envelopes', 'Progress Tracking', 'Giftable Budget Tool'],
+    badge: 'Savings Challenge',
+    fullDescription: 'Turn small, consistent deposits into a meaningful savings goal with the 100 Envelope Challenge. A thoughtfully designed system that makes progress visible, motivating, and easy to enjoy.',
+    colors: ['Blush Pink', 'Cream', 'Gold'],
+  },
 ]
 
 function Bow({ className = '' }: { className?: string }) {
@@ -406,9 +416,9 @@ export function ProductsGallery() {
   const [isModalOpen, setIsModalOpen] = useState(false)
 
   return (
-    <section id="products" className="py-20 md:py-28 relative overflow-hidden">
+    <section id="products" className="premium-catalog-section py-20 md:py-28 relative overflow-hidden">
       {/* Gingham Background */}
-      <div className="absolute inset-0 gingham-pattern opacity-30" />
+      <div className="premium-catalog-background absolute inset-0 gingham-pattern opacity-30" />
 
       {/* Decorative Elements */}
       <motion.div
@@ -433,7 +443,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12"
+          className="premium-catalog-heading text-center mb-12"
         >
           <div className="flex items-center justify-center gap-4 mb-3">
             <Bow className="w-12 h-8 text-primary" />
@@ -448,21 +458,6 @@ export function ProductsGallery() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-4">
             Affordable, aesthetic, and thoughtfully curated items for everyday use
           </p>
-          <p className="text-muted-foreground max-w-3xl mx-auto text-base leading-relaxed mb-6">
-            Our complete collection of budget planners, custom envelopes, and complementary accessories
-            are designed to make your cash stuffing journey beautiful and organized. From premium binders
-            and personalized templates to aesthetic accessories, we have everything you need to manage
-            your family budget with style. Each product is carefully selected to support your financial goals
-            and help you build healthy money habits.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gallery" className="text-primary hover:text-primary/80 font-medium transition-colors underline">
-              View design gallery →
-            </Link>
-            <Link href="/#about" className="text-primary hover:text-primary/80 font-medium transition-colors underline">
-              Learn about cash stuffing →
-            </Link>
-          </div>
         </motion.div>
 
 
@@ -470,7 +465,7 @@ export function ProductsGallery() {
         {/* Product Grid */}
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          className="premium-catalog-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           <AnimatePresence mode="popLayout">
             {products.map((product, index) => (
@@ -488,9 +483,9 @@ export function ProductsGallery() {
                 }}
                 className="cursor-pointer"
               >
-                <div className="bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
+                <div className="premium-catalog-card bg-card rounded-2xl border border-primary/10 overflow-hidden shadow-md hover:shadow-xl hover:border-primary/30 transition-all duration-300 h-full flex flex-col">
                   {/* Image Container */}
-                  <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
+                  <div className="premium-catalog-image relative aspect-square overflow-hidden bg-gradient-to-br from-primary/5 to-accent/5">
                     <Image
                       src={product.image}
                       alt={product.title}
@@ -511,7 +506,7 @@ export function ProductsGallery() {
                   </div>
 
                   {/* Content */}
-                  <div className="p-4 flex-1 flex flex-col">
+                  <div className="premium-catalog-details p-4 flex-1 flex flex-col">
                     <h3 className="font-noto-sans text-lg text-foreground mb-1 line-clamp-2">
                       {product.title}
                     </h3>
@@ -602,7 +597,7 @@ export function ProductsGallery() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
+          className="premium-catalog-cta mt-20 bg-gradient-to-br from-primary/10 to-accent/10 rounded-3xl border border-primary/20 p-8 md:p-12 text-center"
         >
           <h2 className="font-noto-sans text-2xl md:text-3xl text-foreground mb-4">
             Ready to Transform Your <span className="text-primary">Budget?</span>
