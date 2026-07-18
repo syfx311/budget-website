@@ -204,6 +204,26 @@ const products = [
     fullDescription: 'Turn small, consistent deposits into a meaningful savings goal with the 100 Envelope Challenge. A thoughtfully designed system that makes progress visible, motivating, and easy to enjoy.',
     colors: ['Blush Pink', 'Cream', 'Gold'],
   },
+  {
+    id: 16,
+    title: 'Premium A6 Binder',
+    description: 'A soft pink A6 binder with a polished bow detail and organized interior',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F205bd6970476481d8b783f6f5a04046f?format=webp&width=800&height=1200',
+    features: ['Premium A6 Design', 'Multiple Card Slots', 'Durable Construction', 'Everyday Organization'],
+    badge: 'New',
+    fullDescription: 'A premium A6 binder designed to keep budgeting essentials beautifully organized. Its soft pink finish, practical storage, and durable construction make it an elegant everyday companion.',
+    colors: ['Blush Pink', 'Gold', 'Cream'],
+  },
+  {
+    id: 17,
+    title: 'A6 Scallop Binder',
+    description: 'A feminine A6 binder with a scalloped edge, gold rings, and flexible storage',
+    image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F768fc80d96f944d081587034dab2cdd3?format=webp&width=800&height=1200',
+    features: ['Scallop Edge Detail', 'Premium Gold Rings', 'Card and ID Slots', 'Secure Snap Closure'],
+    badge: 'New',
+    fullDescription: 'A beautifully detailed A6 scallop binder that combines a soft pink finish with premium gold rings and thoughtful storage. Made for a polished, practical budgeting routine.',
+    colors: ['Blush Pink', 'Gold', 'Cream'],
+  },
 ]
 
 function Bow({ className = '' }: { className?: string }) {

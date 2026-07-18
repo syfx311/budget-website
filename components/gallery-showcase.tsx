@@ -42,6 +42,8 @@ const galleryImages = [
   { id: 29, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ffade6e36d83a469dbf339f05a884c795?format=webp&width=800&height=1200', alt: 'Budget Binder Flat Lay' },
   { id: 30, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F64739e329b1e4be3b7a8657cfd5220a0?format=webp&width=800&height=1200', alt: 'White Quilted Storage Organizer Basket' },
   { id: 31, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ff10588329d054c649ead706b8de1283e?format=webp&width=800&height=1200', alt: 'Coffee Aesthetic Budget Planning Setup' },
+  { id: 36, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F205bd6970476481d8b783f6f5a04046f?format=webp&width=800&height=1200', alt: 'Premium Pink A6 Binder with Bow Detail' },
+  { id: 37, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F768fc80d96f944d081587034dab2cdd3?format=webp&width=800&height=1200', alt: 'Pink A6 Scallop Binder with Gold Rings' },
 ]
 
 export function GalleryShowcase() {
