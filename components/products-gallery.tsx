@@ -194,6 +194,16 @@ const products = [
     fullDescription: 'Stunning pearl beaded charm bracelet featuring luxurious gold hardware and beautiful pearl accents. Perfect for everyday elegance or special occasions. Each pearl is carefully selected for quality, making this a timeless accessory.',
     colors: ['Pearl White', 'Gold', 'Cream'],
   },
+  {
+    id: 15,
+    title: '100 Envelope Challenge',
+    description: 'A beautiful savings challenge to make consistent progress feel rewarding',
+    image: '/images/binder-elope-challenge-accessories.png',
+    features: ['100 Savings Envelopes', 'Progress Tracking', 'Giftable Budget Tool'],
+    badge: 'Savings Challenge',
+    fullDescription: 'Turn small, consistent deposits into a meaningful savings goal with the 100 Envelope Challenge. A thoughtfully designed system that makes progress visible, motivating, and easy to enjoy.',
+    colors: ['Blush Pink', 'Cream', 'Gold'],
+  },
 ]
 
 function Bow({ className = '' }: { className?: string }) {
