@@ -66,7 +66,7 @@ export function PremiumHome() {
         <div className="premium-collection-grid">
           {collections.map((collection, index) => (
             <motion.div key={collection.title} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.5, delay: index * 0.06 }} variants={reveal}>
-              <Link href={collection.href} className={`premium-collection-card premium-collection-${index} relative min-h-[340px]`}>
+              <Link href={collection.href} className={`premium-collection-card premium-collection-${index} relative`}>
                 <Image src={collection.image} alt={collection.title} width={900} height={1100} sizes="(max-width: 700px) 90vw, (max-width: 1100px) 45vw, 24vw" className="premium-card-image h-full w-full" />
                 <div className="premium-image-tint" />
                 <div className="premium-collection-label"><p>{collection.title}</p><span>{collection.detail}</span><b>Shop now <ArrowRight size={14} /></b></div>
