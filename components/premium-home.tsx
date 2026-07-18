@@ -16,7 +16,7 @@ const collections = [
 const products = [
   { title: 'Tabbed Long Wallet', detail: 'A soft, structured home for your everyday budget.', image: '/images/budget-mystic-wallet.jpg' },
   { title: 'Personalized Binder', detail: 'A considered keepsake for your savings journey.', image: '/images/binder-pink-personalized-wallet.png' },
-  { title: 'Cash Envelope Set', detail: 'A beautiful way to stay mindful with money.', image: '/images/product-budget-envelopes.jpg' },
+  { title: 'Cash Envelope Set', detail: 'A beautiful way to stay mindful with money.', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F612e33ce924343489c8c60716eeef140?format=webp&width=800&height=1200' },
   { title: '100 Envelope Challenge', detail: 'Turn your saving goals into a lasting ritual.', image: '/images/binder-elope-challenge-accessories.png' },
 ]
 
