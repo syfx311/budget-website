@@ -9,7 +9,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 const navigation = [
   { label: 'Home', href: '/' },
   { label: 'Shop', href: '/products' },
-  { label: 'Collections', href: '/products' },
   { label: 'Best Sellers', href: '/products' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'About', href: '/about-mommy-louise' },
