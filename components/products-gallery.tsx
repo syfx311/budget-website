@@ -458,14 +458,6 @@ export function ProductsGallery() {
           <p className="text-muted-foreground max-w-2xl mx-auto text-lg mb-4">
             Affordable, aesthetic, and thoughtfully curated items for everyday use
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/gallery" className="text-primary hover:text-primary/80 font-medium transition-colors underline">
-              View design gallery →
-            </Link>
-            <Link href="/#about" className="text-primary hover:text-primary/80 font-medium transition-colors underline">
-              Learn about cash stuffing →
-            </Link>
-          </div>
         </motion.div>
 
 
