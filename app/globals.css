@@ -419,9 +419,8 @@
   .premium-section-heading { @apply mb-11 max-w-2xl; }
   .premium-section-heading h2, .premium-contact h2, .premium-personalization h2 { @apply text-4xl leading-[1.05] sm:text-5xl; }
   .premium-section-heading .premium-text-link { @apply mt-6; }
-  .premium-collection-grid { @apply grid gap-3 sm:grid-cols-2 lg:grid-cols-12; }
+  .premium-collection-grid { @apply grid gap-3 sm:grid-cols-2 lg:grid-cols-5; }
   .premium-collection-card { @apply relative block min-h-[340px] overflow-hidden rounded-[22px] bg-[#f8f3ef]; }
-  .premium-collection-0 { @apply lg:col-span-5; }.premium-collection-1 { @apply lg:col-span-3; }.premium-collection-2 { @apply lg:col-span-4; }.premium-collection-3 { @apply lg:col-span-4; }.premium-collection-4 { @apply lg:col-span-8; }
   .premium-card-image { @apply object-cover transition-transform duration-700 ease-out; }.premium-collection-card:hover .premium-card-image, .premium-product-image:hover .premium-card-image, .premium-gallery-image:hover .premium-card-image { @apply scale-105; }
   .premium-image-tint { @apply absolute inset-0 bg-[linear-gradient(0deg,rgba(34,34,34,0.6),rgba(34,34,34,0)_60%)]; }
   .premium-collection-label { @apply absolute inset-x-0 bottom-0 p-7 text-white; }.premium-collection-label p { font-family: var(--font-playfair); @apply text-2xl; }.premium-collection-label span { @apply mt-2 block max-w-[220px] text-sm text-white/80; }.premium-collection-label b { @apply mt-5 flex items-center gap-1 text-[10px] uppercase tracking-[0.15em]; }
