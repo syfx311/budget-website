@@ -53,7 +53,7 @@ export function PremiumHome() {
         {[
           [Sparkles, 'Premium quality', 'Crafted with care'],
           [PenLine, 'Personalized for you', 'Thoughtfully made yours'],
-          [Truck, 'Nationwide shipping', 'Delivered across the Philippines'],
+          [Truck, 'Nationwide & worldwide shipping', 'Delivered wherever you are'],
           [Heart, 'Made with love', 'Designed in the Philippines'],
         ].map(([Icon, title, detail]) => {
           const FeatureIcon = Icon as typeof Sparkles
