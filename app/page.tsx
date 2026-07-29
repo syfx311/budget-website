@@ -3,6 +3,7 @@ import Script from 'next/script'
 import { Header } from '@/components/header'
 import { PremiumHome } from '@/components/premium-home'
 import { Contact, Footer } from '@/components/contact'
+import { MigrationAnnouncementModal } from '@/components/migration-announcement-modal'
 import { getCanonicalMetadata } from '@/lib/canonical'
 
 const faqSchema = {
@@ -58,6 +59,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen">
+        <MigrationAnnouncementModal />
         <Header />
         <PremiumHome />
         <Contact />

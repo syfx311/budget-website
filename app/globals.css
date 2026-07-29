@@ -433,7 +433,31 @@
   .premium-testimonials { @apply bg-[#fffbf9]; }.premium-testimonial-grid { @apply grid gap-4 lg:grid-cols-3; }.premium-review-card { @apply rounded-[20px] bg-[#f8f3ef] p-8; }.premium-stars { @apply text-sm tracking-[0.14em] text-[#c8a96a]; }.premium-review-card blockquote { font-family: var(--font-playfair); @apply my-6 text-xl leading-8 text-[#222222]; }.premium-review-card footer { @apply flex flex-col gap-1 text-xs text-[#666666]; }.premium-review-card footer span { @apply font-semibold text-[#222222]; }.premium-review-card small { @apply flex items-center gap-1; }
   .premium-contact { @apply bg-[#222222] px-6 py-20 text-center sm:px-10 lg:py-28; }.premium-contact-inner { @apply mx-auto max-w-2xl; }.premium-contact .premium-eyebrow { @apply text-[#d8bb83]; }.premium-contact h2 { @apply text-4xl text-[#fffbf9] sm:text-5xl; }.premium-contact-inner > p:not(.premium-eyebrow) { @apply mx-auto mt-6 max-w-xl text-base leading-7 text-white/65; }.premium-contact-actions { @apply justify-center; }.premium-contact .premium-text-link { @apply text-white hover:text-[#d8bb83]; }
   .premium-footer { @apply bg-[#f8f3ef] px-6 pb-8 pt-16 sm:px-10; }.premium-footer-grid { @apply mx-auto grid max-w-[1312px] gap-10 border-b border-[#d9d1cb] pb-14 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr_1fr_1.4fr]; }.premium-footer-brand p, .premium-footer-newsletter p { @apply mt-5 max-w-[240px] text-sm leading-6 text-[#666666]; }.footer-socials { @apply mt-6 flex gap-4; }.footer-socials a { @apply text-[#666666] transition-colors hover:text-[#b18b52]; }.premium-footer h3 { @apply mb-5 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#222222]; }.premium-footer li { @apply mb-3; }.premium-footer li a { @apply text-sm text-[#666666] transition-colors hover:text-[#222222]; }.premium-footer-newsletter .premium-text-link { @apply mt-6 text-[10px]; }.premium-footer-bottom { @apply mx-auto flex max-w-[1312px] flex-col justify-between gap-3 pt-7 text-[11px] text-[#777777] sm:flex-row; }
+
+  .migration-modal-backdrop { @apply fixed inset-0 z-[100] flex items-center justify-center overflow-y-auto bg-black/40 p-4 backdrop-blur-sm sm:p-6; }
+  .migration-modal-panel { @apply relative my-auto w-[90%] max-w-[600px] overflow-hidden rounded-[20px] border border-white/70 bg-[#fffbf9]/95 shadow-[0_24px_70px_rgba(57,43,35,0.28)] backdrop-blur-xl; }
+  .migration-modal-content { @apply px-6 pb-7 pt-12 text-center sm:px-10 sm:pb-9; }
+  .migration-close-button { @apply absolute right-4 top-4 z-10 inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#e8d9d5] bg-white/75 text-[#555555] transition-all hover:-translate-y-0.5 hover:border-[#d59ba8] hover:text-[#222222] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d59ba8] focus-visible:ring-offset-2; }
+  .migration-launch-badge { @apply mx-auto mb-4 inline-flex items-center gap-1.5 rounded-full border border-[#c8a96a]/35 bg-[#fff8ec] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.12em] text-[#9b753e]; }
+  .migration-eyebrow { font-family: var(--font-signature); @apply mb-2 text-4xl leading-none text-[#d59ba8] sm:text-[2.7rem]; }
+  .migration-modal-panel h2 { font-family: var(--font-playfair); @apply mx-auto max-w-md text-3xl font-normal leading-[1.05] tracking-[-0.04em] text-[#222222] sm:text-4xl; }
+  .migration-copy { @apply mx-auto mt-6 max-w-[470px] space-y-3 text-sm leading-6 text-[#666666] sm:text-[15px]; }
+  .migration-store-link { @apply inline-block font-semibold text-[#b18b52] underline decoration-[#c8a96a]/50 underline-offset-4 transition-colors hover:text-[#8f6930] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d59ba8] focus-visible:ring-offset-2; }
+  .migration-action-stack { @apply mx-auto mt-7 grid max-w-sm gap-3; }
+  .migration-primary-action, .migration-secondary-action { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-full px-5 text-xs font-semibold uppercase tracking-[0.08em] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#d59ba8] focus-visible:ring-offset-2; }
+  .migration-primary-action { @apply bg-[#d59ba8] text-white shadow-[0_8px_20px_rgba(213,155,168,0.3)] hover:-translate-y-0.5 hover:bg-[#c98a99] hover:shadow-[0_12px_25px_rgba(213,155,168,0.38)]; }
+  .migration-secondary-action { @apply border border-[#d59ba8] bg-white text-[#c98a99] hover:-translate-y-0.5 hover:bg-[#fdf4f6]; }
+  .migration-preference { @apply mt-5 inline-flex cursor-pointer items-center gap-2 text-xs text-[#777777]; }
+  .migration-preference input { @apply sr-only; }
+  .migration-checkbox { @apply inline-flex h-4 w-4 items-center justify-center rounded border border-[#d9d1cb] bg-white text-transparent transition-colors; }
+  .migration-preference input:checked + .migration-checkbox { @apply border-[#d59ba8] bg-[#d59ba8] text-white; }
+  .migration-preference input:focus-visible + .migration-checkbox { @apply ring-2 ring-[#d59ba8] ring-offset-2; }
+  .migration-footer-note { @apply mx-auto mt-5 max-w-sm border-t border-[#ece7e2] pt-4 text-[11px] leading-5 text-[#8a817c]; }
+  .migration-sparkle { @apply absolute text-[#c8a96a] opacity-70; animation: migration-float 3.5s ease-in-out infinite; }
+  .migration-sparkle-left { @apply left-5 top-16; }.migration-sparkle-right { @apply right-12 top-24; animation-delay: -1.7s; }
 }
+
+@keyframes migration-float { 0%, 100% { transform: translateY(0) rotate(0deg); } 50% { transform: translateY(-6px) rotate(12deg); } }
 
 @layer components {
   .premium-catalog-section { @apply bg-[#fffbf9] text-[#222222]; }
