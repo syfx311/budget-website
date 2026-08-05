@@ -46,9 +46,9 @@
   .mobile-navigation a { font-family: var(--font-playfair); font-size: 1.7rem !important; font-weight: 400 !important; letter-spacing: -.03em; }
   .mobile-navigation .premium-button { font-family: inherit; font-size: 10px !important; letter-spacing: .13em; }
   .luxury-hero { min-height: calc(100svh - 25px); }
-  .luxury-hero-copy { min-height: calc(100svh - 25px); width: calc(100% - 40px); padding-top: 76px; padding-bottom: 84px; justify-content: flex-end; }
+  .luxury-hero-copy { min-height: calc(100svh - 25px); width: calc(100% - 40px); padding-top: 76px; padding-bottom: 84px; align-items: flex-end; justify-content: center; text-align: right; }
   .luxury-hero h1 { max-width: 90%; margin-top: 16px; font-size: clamp(4.1rem, 20vw, 7rem); line-height: .78; }
-  .luxury-hero-actions { margin-top: 30px; }
+  .luxury-hero-actions { margin-top: 30px; justify-content: flex-end; }
   .luxury-button { min-height: 48px; padding-inline: 18px; }
   .luxury-quiet-link { min-height: 44px; }
   .luxury-scroll-cue { bottom: 20px; left: 20px; font-size: 8px; }
