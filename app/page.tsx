@@ -5,6 +5,7 @@ import { PremiumHome } from '@/components/premium-home'
 import { Contact, Footer } from '@/components/contact'
 import { MigrationAnnouncementModal } from '@/components/migration-announcement-modal'
 import { getCanonicalMetadata } from '@/lib/canonical'
+import './luxury-home.css'
 
 const faqSchema = {
   '@context': 'https://schema.org',

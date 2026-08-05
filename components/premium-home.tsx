@@ -2,125 +2,103 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { ArrowRight, Gift, Heart, MapPin, PenLine, Sparkles, Truck, WalletCards } from 'lucide-react'
+import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 
-const collections = [
-  { title: 'Premium Collection', detail: 'Budget wallets made for everyday rituals.', image: '/images/binder-pink-personalized-wallet.png', href: '/products' },
-  { title: 'Budget Wallets', detail: 'Beautiful organization for every peso.', image: '/images/binder-pink-pebbled-wallet.jpg', href: '/products' },
-  { title: 'Savings Challenges', detail: 'Small, intentional steps toward more.', image: '/images/binder-elope-savings-challenge.png', href: '/products' },
-  { title: 'Digital Downloads', detail: 'Thoughtfully designed for your routine.', image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/719300983_2229962241136947_588258290332643950_n-qhHX980pLADI8d1Gs9BqvXp6skJj1Q.jpg', href: '/products' },
-  { title: 'Personalized Items', detail: 'Made distinctly yours.', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F733f5d33b6ad47d7abdff42ef4fbffa3?format=webp&width=800&height=1200', href: '/products' },
+const shopUrl = 'https://shop.mommylouisebudgetph.com/'
+
+const stories = [
+  { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: '/images/budget-binder-elegance.jpg' },
+  { title: 'Cash Envelopes', label: '02 / THE RITUAL', image: '/images/color-cream-envelope.jpg' },
+  { title: 'Savings Challenges', label: '03 / THE FUTURE', image: '/images/binder-elope-savings-challenge.png' },
+  { title: 'Accessories', label: '04 / THE DETAILS', image: '/images/budget-accessories.jpg' },
 ]
 
-const products = [
-  { title: 'Tabbed Long Wallet', detail: 'A soft, structured home for your everyday budget.', image: '/images/budget-mystic-wallet.jpg' },
-  { title: 'Personalized Binder', detail: 'A considered keepsake for your savings journey.', image: '/images/binder-pink-personalized-wallet.png' },
-  { title: 'Cash Envelope Set', detail: 'A beautiful way to stay mindful with money.', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F612e33ce924343489c8c60716eeef140?format=webp&width=800&height=1200' },
-  { title: '100 Envelope Challenge', detail: 'Turn your saving goals into a lasting ritual.', image: '/images/binder-elope-challenge-accessories.png' },
+const featuredPieces = [
+  { title: 'The Everyday Edit', image: '/images/binder-pink-personalized-wallet.png', size: 'large' },
+  { title: 'The Savings Ritual', image: '/images/binder-elope-challenge-accessories.png', size: 'small' },
+  { title: 'The Personal Touch', image: '/images/premium-personalized-wallet.jpg', size: 'small' },
 ]
 
-const galleryImages = [
-  { image: '/images/binder-planner-flatlay-collection.png', alt: 'Cash stuffing desk essentials' },
-  { image: '/images/budget-elegance-planner.jpg', alt: 'Premium budgeting planner' },
-  { image: '/images/binder-wallet-collection-lineup.jpg', alt: 'Budget wallet collection' },
-  { image: '/images/desk-organizer-bundle.jpg', alt: 'Budgeting workspace' },
-]
-
-const reveal = {
-  hidden: { opacity: 0, y: 24 },
-  visible: { opacity: 1, y: 0 },
+const fadeUp = {
+  initial: { opacity: 0, y: 34 },
+  whileInView: { opacity: 1, y: 0 },
+  viewport: { once: true, amount: 0.3 },
+  transition: { duration: 0.8, ease: 'easeOut' as const },
 }
 
 export function PremiumHome() {
   return (
-    <>
-      <section className="premium-hero relative">
-        <Image src="/images/hero-background.jpg" alt="Pink personalized budget wallet beside coffee and flowers" fill priority sizes="100vw" className="premium-hero-image" />
-        <div className="premium-hero-shade" />
-        <motion.div initial="hidden" animate="visible" transition={{ duration: 0.65, staggerChildren: 0.12 }} className="premium-hero-content">
-          <motion.p variants={reveal} className="premium-eyebrow">Beautiful budgeting, better life.</motion.p>
-          <motion.h1 variants={reveal}>Organize your<br />money beautifully.</motion.h1>
-          <motion.p variants={reveal} className="premium-hero-copy">Premium budget wallets, binders, and cash stuffing essentials thoughtfully designed for Filipino women.</motion.p>
-          <motion.div variants={reveal} className="premium-action-row">
-            <Link href="/products" className="premium-button">Shop collection <ArrowRight size={16} /></Link>
-            <Link href="#best-sellers" className="premium-text-link">Explore best sellers</Link>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      <section className="premium-trust-bar" aria-label="Our promises">
-        {[
-          [Sparkles, 'Premium quality', 'Crafted with care'],
-          [PenLine, 'Personalized for you', 'Thoughtfully made yours'],
-          [Truck, 'Nationwide & worldwide shipping', 'Delivered wherever you are'],
-          [Heart, 'Made with love', 'Designed in the Philippines'],
-        ].map(([Icon, title, detail]) => {
-          const FeatureIcon = Icon as typeof Sparkles
-          return <div className="premium-trust-item" key={title as string}><FeatureIcon size={20} strokeWidth={1.3} /><div><p>{title as string}</p><span>{detail as string}</span></div></div>
-        })}
-      </section>
-
-      <section className="premium-section premium-collections" id="collections">
-        <div className="premium-section-heading"><p className="premium-eyebrow">Made for the moments that matter</p><h2>Find your beautiful system.</h2><Link href="/products" className="premium-text-link">View all collections <ArrowRight size={15} /></Link></div>
-        <div className="premium-collection-grid">
-          {collections.map((collection, index) => (
-            <motion.div key={collection.title} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.5, delay: index * 0.06 }} variants={reveal}>
-              <Link href={collection.href} className={`premium-collection-card premium-collection-${index} relative`}>
-                <Image src={collection.image} alt={collection.title} width={900} height={1100} sizes="(max-width: 700px) 90vw, (max-width: 1100px) 45vw, 24vw" className="premium-card-image h-full w-full" />
-                <div className="premium-image-tint" />
-                <div className="premium-collection-label"><p>{collection.title}</p><span>{collection.detail}</span><b>Shop now <ArrowRight size={14} /></b></div>
-              </Link>
-            </motion.div>
-          ))}
-        </div>
-      </section>
-
-      <section className="premium-section premium-story-section">
-        <div className="premium-story-copy">
-          <p className="premium-eyebrow">More than just a wallet</p>
-          <h2>Beautiful budgeting starts with intentional habits.</h2>
-          <p className="premium-body-copy">A cash stuffing system gives each peso a purpose. It turns everyday spending into a gentler, more conscious routine—so you can make room for the life you are building.</p>
-          <div className="premium-benefit-list">
-            <div><WalletCards size={20} /><span><b>Make every peso visible</b>See exactly where your money goes.</span></div>
-            <div><Gift size={20} /><span><b>Build habits that last</b>Small steps lead to meaningful change.</span></div>
-            <div><Heart size={20} /><span><b>Save for what matters</b>Your goals deserve a beautiful place to grow.</span></div>
+    <div className="luxury-home">
+      <section className="luxury-hero relative" aria-labelledby="luxury-hero-title">
+        <Image src="/images/hero-background.jpg" alt="A blush budget binder arranged for a quiet morning ritual" fill priority sizes="100vw" className="luxury-hero-image" />
+        <div className="luxury-hero-overlay" />
+        <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
+          <p className="luxury-kicker">Mommy Louise Budget PH</p>
+          <h1 id="luxury-hero-title">Save<br />Beautifully.</h1>
+          <div className="luxury-hero-actions">
+            <a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a>
+            <Link href="/about-mommy-louise" className="luxury-quiet-link">Our story</Link>
           </div>
-          <Link href="/gallery" className="premium-text-link">Discover the cash stuffing method <ArrowRight size={15} /></Link>
-        </div>
-        <div className="premium-story-image relative min-h-[440px]"><Image src="/images/binder-complete-collection-set.png" alt="Open cash stuffing budget binder" width={1200} height={1000} sizes="(max-width: 900px) 100vw, 50vw" className="premium-card-image h-full w-full" /></div>
+        </motion.div>
+        <a className="luxury-scroll-cue" href="#designed" aria-label="Scroll to discover"><span>Scroll to discover</span><ArrowDown size={15} /></a>
       </section>
 
-      <section className="premium-section premium-products" id="best-sellers">
-        <div className="premium-section-heading premium-heading-row"><div><p className="premium-eyebrow">Made to be used and loved</p><h2>Best sellers</h2></div><Link href="/products" className="premium-text-link">Shop all <ArrowRight size={15} /></Link></div>
-        <div className="premium-product-grid">
-          {products.map((product, index) => (
-            <motion.article key={product.title} initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-80px' }} transition={{ duration: 0.45, delay: index * 0.08 }} variants={reveal} className="premium-product-card">
-              <Link href="/products" className="premium-product-image relative h-[360px]"><Image src={product.image} alt={product.title} width={900} height={1100} sizes="(max-width: 700px) 90vw, 25vw" className="premium-card-image h-full w-full" />{index === 0 && <span>Best seller</span>}</Link>
-              <div><h3>{product.title}</h3><p>{product.detail}</p><Link href="/products" className="premium-text-link">View piece <ArrowRight size={14} /></Link></div>
-            </motion.article>
+      <section id="designed" className="luxury-product-film" aria-labelledby="designed-title">
+        <div className="luxury-film-sticky">
+          <motion.div className="luxury-film-copy" {...fadeUp}>
+            <p className="luxury-kicker">A daily companion</p>
+            <h2 id="designed-title">Designed around<br />your life.</h2>
+          </motion.div>
+          <motion.div className="luxury-binder-stage" initial={{ opacity: 0, rotate: -8, scale: 0.86 }} whileInView={{ opacity: 1, rotate: 0, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}>
+            <div className="luxury-binder-light" />
+            <Image src="/images/color-cream-open.jpg" alt="Open cream cash stuffing budget binder" width={1100} height={1100} sizes="(max-width: 767px) 90vw, 54vw" className="luxury-binder-image" />
+            <span className="luxury-film-detail luxury-detail-one">Made for the everyday</span>
+            <span className="luxury-film-detail luxury-detail-two">Every peso, in its place</span>
+          </motion.div>
+        </div>
+      </section>
+
+      <section className="luxury-manifesto" aria-labelledby="manifesto-title">
+        <motion.h2 id="manifesto-title" {...fadeUp}>Money,<br /><em>but make it</em><br />beautiful.</motion.h2>
+      </section>
+
+      <section className="luxury-stories" aria-label="Explore the collection">
+        <div className="luxury-section-intro"><p className="luxury-kicker">The collection</p><span>Scroll to explore</span></div>
+        <div className="luxury-story-rail">
+          {stories.map((story) => (
+            <a href={shopUrl} className="luxury-story-card relative" key={story.title}>
+              <Image src={story.image} alt={story.title} fill sizes="(max-width: 767px) 88vw, 72vw" className="luxury-story-image" />
+              <div className="luxury-story-wash" />
+              <div className="luxury-story-copy"><p>{story.label}</p><h2>{story.title}</h2><span>Discover <ArrowUpRight size={14} /></span></div>
+            </a>
           ))}
         </div>
       </section>
 
-      <section className="premium-personalization">
-        <div className="premium-personalization-image relative min-h-[410px]"><Image src="/images/premium-personalized-wallet.jpg" alt="Personalized blush budget wallet" width={1200} height={1400} sizes="(max-width: 900px) 100vw, 45vw" className="premium-card-image h-full w-full" /></div>
-        <div className="premium-personalization-copy"><p className="premium-eyebrow">Made just for you</p><h2>Personalize your budgeting journey.</h2><p className="premium-body-copy">Choose the details that make your daily ritual feel distinctly yours.</p><div className="premium-steps">{[['01', 'Choose your color'], ['02', 'Add your name'], ['03', 'Pick your charms'], ['04', 'Choose your inserts']].map(([number, step]) => <div key={number}><span>{number}</span><p>{step}</p></div>)}</div><Link href="/products" className="premium-button">Design yours <ArrowRight size={16} /></Link></div>
+      <section className="luxury-lifestyle relative" aria-labelledby="lifestyle-title">
+        <Image src="/images/desk-organizer-bundle.jpg" alt="Budget binder on an organized desk in warm morning light" fill sizes="100vw" className="luxury-lifestyle-image" />
+        <div className="luxury-lifestyle-wash" />
+        <motion.div className="luxury-lifestyle-copy" {...fadeUp}><p className="luxury-kicker">The little things</p><h2 id="lifestyle-title">More than<br />a binder.</h2><p>A quieter way to make space for what matters.</p></motion.div>
       </section>
 
-      <section className="premium-section premium-gallery-section">
-        <div className="premium-section-heading"><p className="premium-eyebrow">A softer way to save</p><h2>Everyday moments, thoughtfully kept.</h2><p className="premium-body-copy">A glimpse into the rituals, desks, and little wins that make budgeting feel good.</p></div>
-        <div className="premium-gallery-grid">{galleryImages.map((photo, index) => <div className={`premium-gallery-image premium-gallery-${index} relative h-[240px]`} key={photo.image}><Image src={photo.image} alt={photo.alt} width={900} height={900} sizes="(max-width: 700px) 50vw, 25vw" className="premium-card-image h-full w-full" /></div>)}</div>
+      <section className="luxury-featured" aria-labelledby="featured-title">
+        <motion.div className="luxury-featured-heading" {...fadeUp}><p className="luxury-kicker">Made to keep</p><h2 id="featured-title">Featured<br /><em>collection.</em></h2><a href={shopUrl} className="luxury-quiet-link">View all pieces <ArrowUpRight size={14} /></a></motion.div>
+        <div className="luxury-featured-grid">
+          {featuredPieces.map((piece, index) => <motion.a href={shopUrl} key={piece.title} className={`luxury-featured-piece luxury-featured-${piece.size} relative`} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7, delay: index * 0.12 }}><Image src={piece.image} alt={piece.title} fill sizes="(max-width: 767px) 100vw, 50vw" className="luxury-featured-image" /><div className="luxury-piece-label"><span>{piece.title}</span><ArrowUpRight size={16} /></div></motion.a>)}
+        </div>
       </section>
 
-      <section className="premium-section premium-testimonials">
-        <div className="premium-section-heading"><p className="premium-eyebrow">Loved by Filipino women</p><h2>Small rituals. Real progress.</h2></div>
-        <div className="premium-testimonial-grid">{[
-          ['“I look forward to filling my envelopes now. Everything is beautiful and so thoughtfully made.”', 'Kris A.', 'Quezon City'],
-          ['“It makes saving feel possible, even with a busy household. My wallet feels like it was made for me.”', 'Marisa L.', 'Laguna'],
-          ['“The quality is exceptional, from the packaging to every little detail. Worth every peso.”', 'Aira M.', 'Cebu City'],
-        ].map(([quote, name, location]) => <article className="premium-review-card" key={name}><div className="premium-stars">★★★★★</div><blockquote>{quote}</blockquote><footer><span>{name}</span><small><MapPin size={12} /> {location}</small></footer></article>)}</div>
+      <section className="luxury-community" aria-labelledby="community-title">
+        <div className="luxury-community-photo relative"><Image src="/images/binder-planner-flatlay-collection.png" alt="A considered cash stuffing ritual" fill sizes="(max-width: 767px) 100vw, 50vw" className="luxury-community-image" /></div>
+        <div className="luxury-community-copy"><p className="luxury-kicker">Our community</p><h2 id="community-title">For the life<br />you&apos;re building.</h2><div className="luxury-names"><span>“Aira M.”</span><span>“Kris A.”</span><span>“Marisa L.”</span></div><Link href="/gallery" className="luxury-quiet-link">See their stories <ArrowUpRight size={14} /></Link></div>
       </section>
-    </>
+
+      <section className="luxury-final-cta relative" aria-labelledby="final-cta-title">
+        <Image src="/images/budget-elegance-planner.jpg" alt="Elegant budget planner and binder collection" fill sizes="100vw" className="luxury-final-image" />
+        <div className="luxury-final-wash" />
+        <motion.div className="luxury-final-copy" {...fadeUp}><p className="luxury-kicker">A beautiful beginning</p><h2 id="final-cta-title">Ready to build<br />your future?</h2><a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a></motion.div>
+      </section>
+    </div>
   )
 }
