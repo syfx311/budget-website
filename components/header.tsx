@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
 import Link from 'next/link'
 import { Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
@@ -35,10 +34,6 @@ export function Header() {
       <div className="announcement-bar">Free shipping on qualifying orders · Made with love in the Philippines</div>
       <motion.header animate={{ y: isVisible ? 0 : -120 }} transition={{ duration: 0.35, ease: 'easeOut' }} className={`site-header ${isScrolled ? 'site-header-scrolled' : ''}`}>
         <nav className="site-nav" aria-label="Primary navigation">
-          <Link href="/" className="brand-lockup" onClick={() => setMobileMenuOpen(false)}>
-            <Image src="/images/logo.png" alt="Mommy Louise Budget PH" width={46} height={46} className="brand-mark" priority />
-            <span><b>mommy louise&apos;s</b><small>Budget PH</small></span>
-          </Link>
           <div className="site-links">
             {navigation.map((item) => <Link key={item.label} href={item.href}>{item.label}</Link>)}
           </div>
