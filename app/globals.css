@@ -588,3 +588,26 @@
   .migration-eyebrow { font-size: 2.7rem !important; }
   .migration-modal-panel h2 { font-size: 2.5rem !important; }
 }
+
+.shop-footer-wordmark {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: hsl(340 65% 65%);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.shop-footer-script {
+  font-family: var(--font-dancing-script), cursive;
+  font-size: 2.25rem;
+  line-height: 1;
+}
+
+.shop-footer-label {
+  margin-top: .25rem;
+  color: hsl(4 27% 22% / .7);
+  font-family: var(--font-karla), var(--font-dm-sans), sans-serif;
+  font-size: 11px;
+  letter-spacing: .3em;
+}

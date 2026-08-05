@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Playfair_Display, Cormorant_Garamond, Karla, Noto_Sans_Adlam, Noto_Sans, DM_Sans, Allura, Grand_Hotel } from 'next/font/google'
+import { Geist, Playfair_Display, Cormorant_Garamond, Karla, Dancing_Script, Noto_Sans_Adlam, Noto_Sans, DM_Sans, Allura, Grand_Hotel } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { BackToTop } from '@/components/back-to-top'
@@ -28,6 +28,12 @@ const karla = Karla({
   subsets: ["latin"],
   variable: '--font-karla',
   weight: ['300', '400', '500', '600', '700']
+})
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  variable: '--font-dancing-script',
+  weight: ['400', '500', '600', '700']
 })
 
 const notoSansAdlam = Noto_Sans_Adlam({
@@ -122,7 +128,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSearchSchema) }}
         />
       </head>
-      <body className={`${geist.variable} ${playfair.variable} ${cormorant.variable} ${karla.variable} ${notoSansAdlam.variable} ${notoSans.variable} ${dmSans.variable} ${allura.variable} ${grandHotel.variable} font-sans antialiased`}>
+      <body className={`${geist.variable} ${playfair.variable} ${cormorant.variable} ${karla.variable} ${dancingScript.variable} ${notoSansAdlam.variable} ${notoSans.variable} ${dmSans.variable} ${allura.variable} ${grandHotel.variable} font-sans antialiased`}>
         {children}
         <BackToTop />
         {process.env.NODE_ENV === 'production' && <Analytics />}
