@@ -132,6 +132,8 @@
 .announcement-bar { background: var(--shop-pink-soft) !important; color: var(--shop-foreground) !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 300 !important; letter-spacing: .18em !important; }
 .mobile-navigation { background: rgba(255, 255, 255, .94) !important; }
 .mobile-navigation a { color: var(--shop-foreground) !important; }
+.mobile-navigation .premium-button { border: 1px solid var(--shop-pink) !important; border-radius: 999px !important; background: var(--shop-pink) !important; color: #fff !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500 !important; letter-spacing: .04em !important; text-transform: none !important; transition: background-color 200ms ease, transform 250ms ease !important; }
+.mobile-navigation .premium-button:hover { background: var(--shop-pink-hover) !important; }
 .luxury-home + .premium-contact { background: var(--shop-pink-soft); }
 .luxury-home + .premium-contact h2 { color: var(--shop-foreground); }
 .luxury-home + .premium-contact .premium-eyebrow { color: var(--shop-pink); }
