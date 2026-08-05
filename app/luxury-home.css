@@ -37,4 +37,52 @@
 @keyframes luxury-hero-drift { from { transform: scale(1.02); } to { transform: scale(1.09); } } @keyframes luxury-float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-14px) rotate(.8deg); } } @keyframes luxury-arrow { 0%,100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
 @media (max-width: 767px) { .luxury-hero-copy { width: calc(100% - 40px); }.luxury-hero-image { object-position: 63% center; }.luxury-hero-overlay { background: linear-gradient(90deg, rgba(245,240,233,.91), rgba(245,240,233,.45) 92%); }.luxury-hero-actions { gap: 20px; margin-top: 38px; }.luxury-product-film { height: 125vh; }.luxury-film-copy { top: 12%; left: 24px; }.luxury-binder-stage { width: 104vw; margin-top: 110px; }.luxury-film-detail { display: none; }.luxury-manifesto { min-height: 75svh; }.luxury-story-card { flex-basis: 84vw; min-height: 65svh; }.luxury-story-copy { right: 23px; bottom: 25px; left: 23px; }.luxury-featured-heading { align-items: flex-start; flex-direction: column; gap: 30px; }.luxury-featured-grid { grid-template-columns: 1fr; }.luxury-featured-piece, .luxury-featured-large { min-height: 115vw; }.luxury-community { grid-template-columns: 1fr; }.luxury-community-photo { min-height: 88vw; }.luxury-community-copy { padding: 90px 24px; }.luxury-final-copy h2 { font-size: 4rem; }.site-nav { padding: 0 20px !important; }.site-nav > .nav-cta { display: none !important; } }
 @media (prefers-reduced-motion: reduce) { .luxury-hero-image, .luxury-binder-image, .luxury-final-image, .luxury-scroll-cue svg { animation: none; } .luxury-story-image, .luxury-featured-image { transition: none; } }
+@media (max-width: 767px) {
+  .announcement-bar { height: 25px !important; padding-inline: 12px !important; font-size: 7px !important; letter-spacing: .1em !important; }
+  .site-header { top: 25px !important; }
+  .site-nav { height: 64px !important; padding-inline: 18px !important; }
+  .mobile-menu-toggle { min-height: 44px; min-width: 44px; display: inline-flex; align-items: center; justify-content: center; }
+  .mobile-navigation { gap: 22px !important; padding: 26px 22px 30px !important; }
+  .mobile-navigation a { font-family: var(--font-playfair); font-size: 1.7rem !important; font-weight: 400 !important; letter-spacing: -.03em; }
+  .mobile-navigation .premium-button { font-family: inherit; font-size: 10px !important; letter-spacing: .13em; }
+  .luxury-hero { min-height: calc(100svh - 25px); }
+  .luxury-hero-copy { min-height: calc(100svh - 25px); width: calc(100% - 40px); padding-top: 76px; padding-bottom: 84px; justify-content: flex-end; }
+  .luxury-hero h1 { max-width: 90%; margin-top: 16px; font-size: clamp(4.1rem, 20vw, 7rem); line-height: .78; }
+  .luxury-hero-actions { margin-top: 30px; }
+  .luxury-button { min-height: 48px; padding-inline: 18px; }
+  .luxury-quiet-link { min-height: 44px; }
+  .luxury-scroll-cue { bottom: 20px; left: 20px; font-size: 8px; }
+  .luxury-product-film { height: 135svh; }
+  .luxury-film-sticky { min-height: calc(100svh - 25px); align-items: center; }
+  .luxury-film-copy { top: 12%; left: 20px; right: 20px; }
+  .luxury-film-copy h2 { margin-top: 13px; font-size: clamp(3.2rem, 14vw, 5.5rem); line-height: .82; }
+  .luxury-binder-stage { width: 108vw; margin-top: 76px; }
+  .luxury-manifesto { min-height: 72svh; padding: 70px 20px; }
+  .luxury-manifesto h2 { font-size: clamp(4rem, 18vw, 7rem); }
+  .luxury-stories { padding: 78px 0 66px; }
+  .luxury-section-intro { width: calc(100% - 40px); margin-bottom: 24px; }
+  .luxury-story-rail { gap: 12px; padding-inline: 20px; }
+  .luxury-story-card { flex-basis: calc(100vw - 40px); min-height: 70svh; }
+  .luxury-story-copy h2 { font-size: clamp(2.8rem, 13vw, 5rem); }
+  .luxury-lifestyle { min-height: 78svh; }
+  .luxury-lifestyle-image { object-position: 58% center; }
+  .luxury-lifestyle-copy { width: calc(100% - 40px); padding-top: 80px; align-self: flex-end; padding-bottom: 70px; }
+  .luxury-lifestyle h2 { margin-block: 16px 22px; font-size: clamp(3.9rem, 18vw, 7rem); }
+  .luxury-featured { padding: 82px 20px; }
+  .luxury-featured-heading { margin-bottom: 34px; }
+  .luxury-featured-heading h2 { font-size: clamp(4rem, 17vw, 7rem); }
+  .luxury-featured-grid { gap: 12px; }
+  .luxury-featured-piece, .luxury-featured-large { min-height: 112vw; }
+  .luxury-piece-label { right: 18px; bottom: 16px; left: 18px; }
+  .luxury-community { min-height: 0; }
+  .luxury-community-photo { min-height: 88vw; }
+  .luxury-community-copy { padding: 76px 20px 88px; }
+  .luxury-community-copy h2 { margin-block: 16px 34px; font-size: clamp(3.5rem, 15vw, 6rem); }
+  .luxury-final-cta { min-height: 82svh; }
+  .luxury-final-copy { width: calc(100% - 36px); }
+  .luxury-final-copy h2 { margin-block: 18px 36px; font-size: clamp(3.8rem, 16vw, 6.5rem); }
+  .luxury-home + .premium-contact { padding: 82px 20px; }
+  .luxury-home + .premium-contact h2 { font-size: clamp(3rem, 13vw, 5rem); }
+  .luxury-home ~ .premium-footer { padding-inline: 20px; }
+}
 .luxury-home + .premium-contact { padding: clamp(90px, 11vw, 160px) 24px; background: #292622; }.luxury-home + .premium-contact .premium-eyebrow { color: #dfc79f; }.luxury-home + .premium-contact h2 { color: #f8f2ea; font-size: clamp(3rem, 5vw, 5.4rem); line-height: .9; }.luxury-home + .premium-contact .premium-button { border: 1px solid #f8f2ea; background: #f8f2ea; color: #292622; }.luxury-home + .premium-contact .premium-text-link { color: #f8f2ea; }.luxury-home + .premium-contact .premium-contact-inner > p:not(.premium-eyebrow) { color: rgba(248,242,234,.66); }.luxury-home ~ .premium-footer { background: #e8ded2; }.luxury-home ~ .premium-footer h3 { color: #292622; }.luxury-home ~ .premium-footer li a, .luxury-home ~ .premium-footer-brand p, .luxury-home ~ .premium-footer-newsletter p, .luxury-home ~ .premium-footer-bottom { color: #655c52; }.luxury-home ~ .premium-footer-grid { border-color: rgba(41,38,34,.18); }
