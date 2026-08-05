@@ -94,53 +94,53 @@
   --shop-pink-soft: hsl(340 80% 92%);
   --shop-blush: hsl(20 55% 90%);
   --shop-border: hsl(4 27% 22% / .1);
-  background: var(--shop-background);
-  color: var(--shop-foreground);
+  background: hsl(24 60% 97%);
+  color: hsl(4 27% 22%);
   font-family: var(--font-karla), var(--font-dm-sans), system-ui, sans-serif;
 }
 .luxury-home h1, .luxury-home h2 { font-family: var(--font-cormorant), var(--font-playfair), serif; letter-spacing: -.045em; }
-.luxury-kicker { color: var(--shop-pink); font-weight: 500; letter-spacing: .3em; }
+.luxury-kicker { color: hsl(340 65% 65%); font-weight: 500; letter-spacing: .3em; }
 .luxury-hero-overlay { background: linear-gradient(90deg, hsl(24 60% 97% / .92) 0%, hsl(24 60% 97% / .68) 36%, hsl(24 60% 97% / .08) 74%); }
 .luxury-hero h1 { font-weight: 500; }
-.luxury-button { border-color: var(--shop-pink); background: var(--shop-pink); color: #fff; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: none; transition-duration: 250ms; }
-.luxury-button:hover { border-color: var(--shop-pink-hover); background: var(--shop-pink-hover); color: #fff; transform: translateY(-2px); }
-.luxury-quiet-link { color: var(--shop-foreground); font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .02em; text-transform: none; transition: color 200ms ease, opacity 200ms ease; }
-.luxury-quiet-link:hover { color: var(--shop-pink-hover); opacity: 1; }
+.luxury-button { border-color: hsl(340 65% 65%); background: hsl(340 65% 65%); color: #fff; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: none; transition-duration: 250ms; }
+.luxury-button:hover { border-color: hsl(340 70% 58%); background: hsl(340 70% 58%); color: #fff; transform: translateY(-2px); }
+.luxury-quiet-link { color: hsl(4 27% 22%); font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .02em; text-transform: none; transition: color 200ms ease, opacity 200ms ease; }
+.luxury-quiet-link:hover { color: hsl(340 70% 58%); opacity: 1; }
 .luxury-scroll-cue, .luxury-story-copy span, .luxury-piece-label { font-family: var(--font-karla), var(--font-dm-sans), sans-serif; letter-spacing: .12em; }
-.luxury-product-film { background: var(--shop-blush); }
+.luxury-product-film { background: hsl(20 55% 90%); }
 .luxury-binder-light { background: hsl(24 60% 97%); }
-.luxury-film-detail { border-color: var(--shop-border); color: hsl(4 27% 22% / .7); }
-.luxury-manifesto { background: var(--shop-pink-soft); color: var(--shop-foreground); }
-.luxury-manifesto em, .luxury-featured em { color: var(--shop-pink); }
-.luxury-stories, .luxury-featured { background: var(--shop-background); }
-.luxury-story-card { border-radius: 1.5rem; background: var(--shop-blush); }
+.luxury-film-detail { border-color: hsl(4 27% 22% / .1); color: hsl(4 27% 22% / .7); }
+.luxury-manifesto { background: hsl(340 80% 92%); color: hsl(4 27% 22%); }
+.luxury-manifesto em, .luxury-featured em { color: hsl(340 65% 65%); }
+.luxury-stories, .luxury-featured { background: hsl(24 60% 97%); }
+.luxury-story-card { border-radius: 1.5rem; background: hsl(20 55% 90%); }
 .luxury-story-wash { background: linear-gradient(0deg, hsl(4 27% 22% / .52), transparent 62%); }
 .luxury-story-image, .luxury-featured-image { transition-duration: 500ms; }
 .luxury-lifestyle-wash { background: linear-gradient(90deg, hsl(4 27% 22% / .34), hsl(4 27% 22% / .04)); }
-.luxury-lifestyle-copy .luxury-kicker, .luxury-final-copy .luxury-kicker { color: var(--shop-pink); }
-.luxury-featured-piece { border-radius: 1.5rem; background: var(--shop-blush); }
-.luxury-community { background: var(--shop-blush); }
+.luxury-lifestyle-copy .luxury-kicker, .luxury-final-copy .luxury-kicker { color: hsl(340 65% 65%); }
+.luxury-featured-piece { border-radius: 1.5rem; background: hsl(20 55% 90%); }
+.luxury-community { background: hsl(20 55% 90%); }
 .luxury-final-wash { background: hsl(4 27% 22% / .2); }
-.luxury-final-copy .luxury-button { border-color: var(--shop-pink); background: var(--shop-pink); color: #fff; }
-.luxury-final-copy .luxury-button:hover { border-color: var(--shop-pink-hover); background: var(--shop-pink-hover); color: #fff; }
+.luxury-final-copy .luxury-button { border-color: hsl(340 65% 65%); background: hsl(340 65% 65%); color: #fff; }
+.luxury-final-copy .luxury-button:hover { border-color: hsl(340 70% 58%); background: hsl(340 70% 58%); color: #fff; }
 .site-header { background: rgba(255, 255, 255, .9) !important; backdrop-filter: blur(10px) !important; }
 .site-header-scrolled { background: rgba(255, 255, 255, .9) !important; backdrop-filter: blur(10px) !important; }
-.site-links a, .mobile-menu-toggle { color: var(--shop-foreground) !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-size: .875rem !important; font-weight: 300 !important; letter-spacing: 0 !important; text-transform: none; transition: color 200ms ease; }
-.site-links a:hover { color: var(--shop-pink-hover) !important; }
-.nav-cta { border-radius: 999px !important; background: var(--shop-pink) !important; color: #fff !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500 !important; letter-spacing: 0 !important; text-transform: none; transition: background-color 200ms ease, transform 250ms ease !important; }
-.nav-cta:hover { background: var(--shop-pink-hover) !important; }
-.announcement-bar { background: var(--shop-pink-soft) !important; color: var(--shop-foreground) !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 300 !important; letter-spacing: .18em !important; }
+.site-links a, .mobile-menu-toggle { color: hsl(4 27% 22%) !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-size: .875rem !important; font-weight: 300 !important; letter-spacing: 0 !important; text-transform: none; transition: color 200ms ease; }
+.site-links a:hover { color: hsl(340 70% 58%) !important; }
+.nav-cta { border-radius: 999px !important; background: hsl(340 65% 65%) !important; color: #fff !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500 !important; letter-spacing: 0 !important; text-transform: none; transition: background-color 200ms ease, transform 250ms ease !important; }
+.nav-cta:hover { background: hsl(340 70% 58%) !important; }
+.announcement-bar { background: hsl(340 80% 92%) !important; color: hsl(4 27% 22%) !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 300 !important; letter-spacing: .18em !important; }
 .mobile-navigation { background: rgba(255, 255, 255, .94) !important; }
-.mobile-navigation a { color: var(--shop-foreground) !important; }
-.mobile-navigation .premium-button { border: 1px solid var(--shop-pink) !important; border-radius: 999px !important; background: var(--shop-pink) !important; color: #fff !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500 !important; letter-spacing: .04em !important; text-transform: none !important; transition: background-color 200ms ease, transform 250ms ease !important; }
-.mobile-navigation .premium-button:hover { background: var(--shop-pink-hover) !important; }
-.luxury-home + .premium-contact { background: var(--shop-pink-soft); }
-.luxury-home + .premium-contact h2 { color: var(--shop-foreground); }
-.luxury-home + .premium-contact .premium-eyebrow { color: var(--shop-pink); }
-.luxury-home + .premium-contact .premium-button { border-color: var(--shop-pink); background: var(--shop-pink); color: #fff; }
-.luxury-home + .premium-contact .premium-text-link { color: var(--shop-foreground); }
+.mobile-navigation a { color: hsl(4 27% 22%) !important; }
+.mobile-navigation .premium-button { border: 1px solid hsl(340 65% 65%) !important; border-radius: 999px !important; background: hsl(340 65% 65%) !important; color: #fff !important; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500 !important; letter-spacing: .04em !important; text-transform: none !important; transition: background-color 200ms ease, transform 250ms ease !important; }
+.mobile-navigation .premium-button:hover { background: hsl(340 70% 58%) !important; }
+.luxury-home + .premium-contact { background: hsl(340 80% 92%); }
+.luxury-home + .premium-contact h2 { color: hsl(4 27% 22%); }
+.luxury-home + .premium-contact .premium-eyebrow { color: hsl(340 65% 65%); }
+.luxury-home + .premium-contact .premium-button { border-color: hsl(340 65% 65%); background: hsl(340 65% 65%); color: #fff; }
+.luxury-home + .premium-contact .premium-text-link { color: hsl(4 27% 22%); }
 .luxury-home + .premium-contact .premium-contact-inner > p:not(.premium-eyebrow) { color: hsl(4 27% 22% / .7); }
-.luxury-home ~ .premium-footer { background: var(--shop-pink-soft); color: var(--shop-foreground); }
-.luxury-home ~ .premium-footer-grid { border-color: var(--shop-border); }
+.luxury-home ~ .premium-footer { background: hsl(340 80% 92%); color: hsl(4 27% 22%); }
+.luxury-home ~ .premium-footer-grid { border-color: hsl(4 27% 22% / .1); }
 .luxury-home ~ .premium-footer li a, .luxury-home ~ .premium-footer-brand p, .luxury-home ~ .premium-footer-newsletter p, .luxury-home ~ .premium-footer-bottom { color: hsl(4 27% 22% / .7); }
-.luxury-home ~ .premium-footer li a:hover { color: var(--shop-pink-hover); }
+.luxury-home ~ .premium-footer li a:hover { color: hsl(340 70% 58%); }
