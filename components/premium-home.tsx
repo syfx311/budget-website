@@ -1,7 +1,6 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 
@@ -101,7 +100,7 @@ export function PremiumHome() {
 
       <section className="luxury-community" aria-labelledby="community-title">
         <div className="luxury-community-photo relative"><Image src="/images/binder-planner-flatlay-collection.png" alt="A considered cash stuffing ritual" fill sizes="(max-width: 767px) 100vw, 50vw" className="luxury-community-image" /></div>
-        <div className="luxury-community-copy"><p className="luxury-kicker">Our community</p><h2 id="community-title">For the life<br />you&apos;re building.</h2><div className="luxury-names"><span>“Aira M.”</span><span>“Kris A.”</span><span>“Marisa L.”</span></div><Link href="/gallery" className="luxury-quiet-link">See their stories <ArrowUpRight size={14} /></Link></div>
+        <div className="luxury-community-copy"><p className="luxury-kicker">Our community</p><h2 id="community-title">For the life<br />you&apos;re building.</h2><div className="luxury-names"><span>“Aira M.”</span><span>“Kris A.”</span><span>“Marisa L.”</span></div></div>
       </section>
 
       <section className="luxury-final-cta relative" aria-labelledby="final-cta-title">
