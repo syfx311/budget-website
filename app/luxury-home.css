@@ -4,16 +4,17 @@
 .luxury-kicker { margin: 0; color: #a38356; font-size: 10px; font-weight: 600; letter-spacing: 0.19em; text-transform: uppercase; }
 .luxury-hero, .luxury-lifestyle, .luxury-final-cta { position: relative; isolation: isolate; min-height: 100svh; overflow: hidden; }
 .luxury-hero-image, .luxury-lifestyle-image, .luxury-final-image { z-index: -2; object-fit: cover; }
+.luxury-hero video.luxury-hero-image { position: absolute; z-index: 0; inset: 0; width: 100%; height: 100%; }
 .luxury-hero-image { object-position: 65% center; animation: luxury-hero-drift 14s ease-in-out infinite alternate; }
-.luxury-hero-overlay { position: absolute; z-index: -1; inset: 0; background: linear-gradient(90deg, rgba(245, 240, 233, 0.93) 0%, rgba(245, 240, 233, 0.73) 34%, rgba(245, 240, 233, 0.06) 72%); }
-.luxury-hero-copy { display: flex; min-height: 100svh; flex-direction: column; justify-content: center; width: min(100% - 48px, 1360px); margin: 0 auto; padding: 92px 0 40px; }
+.luxury-hero-overlay { position: absolute; z-index: 1; inset: 0; background: linear-gradient(90deg, rgba(245, 240, 233, 0.93) 0%, rgba(245, 240, 233, 0.73) 34%, rgba(245, 240, 233, 0.06) 72%); }
+.luxury-hero-copy { position: relative; z-index: 2; display: flex; min-height: 100svh; flex-direction: column; justify-content: center; width: min(100% - 48px, 1360px); margin: 0 auto; padding: 92px 0 40px; }
 .luxury-hero h1 { margin-top: 22px; font-size: clamp(4.4rem, 10vw, 10.5rem); line-height: 0.8; }
 .luxury-hero-actions { display: flex; align-items: center; gap: 28px; margin-top: 48px; }
 .luxury-button { display: inline-flex; align-items: center; justify-content: center; gap: 9px; border: 1px solid #292622; border-radius: 999px; background: #292622; padding: 15px 21px; color: #fff; font-size: 10px; font-weight: 600; letter-spacing: 0.13em; text-transform: uppercase; transition: transform 300ms ease, background-color 300ms ease, color 300ms ease; }
 .luxury-button:hover { background: transparent; color: #292622; transform: translateY(-3px); }
 .luxury-quiet-link { display: inline-flex; align-items: center; gap: 7px; color: #292622; font-size: 10px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; transition: opacity 240ms ease; }
 .luxury-quiet-link:hover { opacity: 0.55; }
-.luxury-scroll-cue { position: absolute; bottom: 32px; left: max(24px, calc((100vw - 1360px) / 2)); display: flex; align-items: center; gap: 10px; color: #292622; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
+.luxury-scroll-cue { position: absolute; z-index: 2; bottom: 32px; left: max(24px, calc((100vw - 1360px) / 2)); display: flex; align-items: center; gap: 10px; color: #292622; font-size: 9px; font-weight: 600; letter-spacing: 0.16em; text-transform: uppercase; }
 .luxury-scroll-cue svg { animation: luxury-arrow 1.8s ease-in-out infinite; }
 .luxury-product-film { height: 190vh; background: #eae1d5; }
 .luxury-film-sticky { position: sticky; top: 0; display: grid; min-height: 100svh; overflow: hidden; place-items: center; }
@@ -104,6 +105,8 @@
 .luxury-kicker { color: hsl(340 65% 65%); font-weight: 500; letter-spacing: .3em; }
 .luxury-hero-overlay { background: linear-gradient(90deg, hsl(24 60% 97% / .92) 0%, hsl(24 60% 97% / .68) 36%, hsl(24 60% 97% / .08) 74%); }
 .luxury-hero h1 { font-weight: 500; }
+.luxury-hero-word { display: inline-block; font-size: 60%; white-space: pre; }
+.luxury-hero-script { display: inline-block; margin-top: -0.08em; color: hsl(340 65% 65%); font-family: 'Brittany Signature', cursive; font-size: 0.72em; font-weight: 400; letter-spacing: 0; line-height: 0.85; transform: rotate(-4deg); transform-origin: left center; }
 .luxury-button { border-color: hsl(340 65% 65%); background: hsl(340 65% 65%); color: #fff; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: none; transition-duration: 250ms; }
 .luxury-button:hover { border-color: hsl(340 70% 58%); background: hsl(340 70% 58%); color: #fff; transform: translateY(-2px); }
 .luxury-quiet-link { color: hsl(4 27% 22%); font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .02em; text-transform: none; transition: color 200ms ease, opacity 200ms ease; }

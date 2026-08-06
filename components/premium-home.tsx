@@ -30,11 +30,11 @@ export function PremiumHome() {
   return (
     <div className="luxury-home">
       <section className="luxury-hero relative" aria-labelledby="luxury-hero-title">
-        <Image src="/images/hero-background.jpg" alt="A blush budget binder arranged for a quiet morning ritual" fill priority sizes="100vw" className="luxury-hero-image" />
+        <video className="luxury-hero-image" poster="/images/hero-background.jpg" autoPlay loop muted playsInline preload="auto" aria-hidden="true"><source src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc4fc47d6be5745189c95f817586f5b50%2Fcompressed?apiKey=8c358e96430c4451949ddae1cc8ed29a&token=c4fc47d6be5745189c95f817586f5b50&alt=media&optimized=true" type="video/webm" /><source src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fd27c286c118949dab2156b80f8a9dd27?alt=media&token=7b071db9-c3df-4e1a-9a52-b2f0eec84373&apiKey=8c358e96430c4451949ddae1cc8ed29a" type="video/mp4" /></video>
         <div className="luxury-hero-overlay" />
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
-          <p className="luxury-kicker">Mommy Louise Budget PH</p>
-          <h1 id="luxury-hero-title">Save<br />Beautifully.</h1>
+          <p className="luxury-kicker">MOMMY LOUISE'S BUDGET PH</p>
+          <h1 id="luxury-hero-title"><span className="luxury-hero-word">{'  '}Save</span><br /><span className="luxury-hero-script">Beautifully.</span></h1>
           <div className="luxury-hero-actions">
             <a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a>
           </div>
@@ -51,7 +51,7 @@ export function PremiumHome() {
           <motion.div className="luxury-binder-stage" initial={{ opacity: 0, rotate: -8, scale: 0.86 }} whileInView={{ opacity: 1, rotate: 0, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}>
             <div className="luxury-binder-light" />
             <Image src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F3403a3c2686f4f4c80ba772d8a2613e4?format=webp&width=800&height=1200" alt="Pink quilted budget planner" width={1100} height={1100} sizes="(max-width: 767px) 90vw, 54vw" className="luxury-binder-image" />
-            <span className="luxury-film-detail luxury-detail-one">Made for the everyday</span>
+            <span className="luxury-film-detail luxury-detail-one">Thoughtfully Made</span>
             <span className="luxury-film-detail luxury-detail-two">Every peso, in its place</span>
           </motion.div>
         </div>
