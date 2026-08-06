@@ -30,7 +30,7 @@ export function PremiumHome() {
   return (
     <div className="luxury-home">
       <section className="luxury-hero relative" aria-labelledby="luxury-hero-title">
-        <video className="luxury-hero-image" src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29%2Fc4fc47d6be5745189c95f817586f5b50%2Fcompressed?apiKey=8c358e96430c4451949ddae1cc8ed29a&token=c4fc47d6be5745189c95f817586f5b50&alt=media&optimized=true" poster="/images/hero-background.jpg" autoPlay loop muted playsInline preload="auto" aria-hidden="true" />
+        <video className="luxury-hero-image" poster="/images/hero-background.jpg" autoPlay loop muted playsInline preload="auto" aria-hidden="true"><source src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fc4fc47d6be5745189c95f817586f5b50%2Fcompressed?apiKey=8c358e96430c4451949ddae1cc8ed29a&token=c4fc47d6be5745189c95f817586f5b50&alt=media&optimized=true" type="video/webm" /><source src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fd27c286c118949dab2156b80f8a9dd27?alt=media&token=7b071db9-c3df-4e1a-9a52-b2f0eec84373&apiKey=8c358e96430c4451949ddae1cc8ed29a" type="video/mp4" /></video>
         <div className="luxury-hero-overlay" />
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
           <p className="luxury-kicker">MOMMY LOUISE'S BUDGET PH</p>
