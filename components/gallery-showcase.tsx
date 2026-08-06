@@ -46,6 +46,8 @@ const galleryImages = [
   { id: 37, src: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F768fc80d96f944d081587034dab2cdd3?format=webp&width=800&height=1200', alt: 'Pink A6 Scallop Binder with Gold Rings' },
 ]
 
+const pinkGalleryImages = galleryImages.filter((image) => image.alt.toLowerCase().includes('pink'))
+
 export function GalleryShowcase() {
   const [selectedImage, setSelectedImage] = useState<any>(null)
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -82,7 +84,7 @@ export function GalleryShowcase() {
           role="region"
           aria-label="Budget binder design gallery"
         >
-          {galleryImages.map((image, index) => (
+          {pinkGalleryImages.map((image, index) => (
             <figure key={image.id} className="relative overflow-hidden">
               <motion.button
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -122,7 +124,7 @@ export function GalleryShowcase() {
           className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-16"
         >
           <div className="gallery-stat-card p-6 text-center">
-            <div className="text-3xl font-bold text-primary mb-2">31+</div>
+            <div className="text-3xl font-bold text-primary mb-2">{pinkGalleryImages.length}</div>
             <div className="text-sm text-muted-foreground">Unique Designs</div>
           </div>
           <div className="gallery-stat-card p-6 text-center">
