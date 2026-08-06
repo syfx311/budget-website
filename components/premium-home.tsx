@@ -11,7 +11,7 @@ const stories = [
   { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: '/images/budget-binder-elegance.jpg' },
   { title: 'Inserts', label: '02 / THE RITUAL', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F533dd43327394981beb18ad6f1071f2c?format=webp&width=800&height=1200' },
   { title: 'Savings Challenges', label: '03 / THE FUTURE', image: '/images/binder-elope-savings-challenge.png' },
-  { title: 'Accessories', label: '04 / THE DETAILS', image: '/images/budget-accessories.jpg' },
+  { title: 'Accessories', label: '04 / THE DETAILS', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F36e9fdc418dd457ca4be4ac83377ee54?format=webp&width=800&height=1200' },
 ]
 
 const featuredPieces = [
