@@ -33,7 +33,7 @@ export function PremiumHome() {
         <Image src="/images/hero-background.jpg" alt="A blush budget binder arranged for a quiet morning ritual" fill priority sizes="100vw" className="luxury-hero-image" />
         <div className="luxury-hero-overlay" />
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
-          <p className="luxury-kicker">Mommy Louise Budget PH</p>
+          <p className="luxury-kicker">MOMMY LOUISE'S BUDGET PH</p>
           <h1 id="luxury-hero-title">Save<br />Beautifully.</h1>
           <div className="luxury-hero-actions">
             <a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a>
