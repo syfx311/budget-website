@@ -10,7 +10,6 @@ const navigation = [
   { label: 'Shop', href: '/products' },
   { label: 'Gallery', href: '/gallery' },
   { label: 'About', href: '/about-mommy-louise' },
-  { label: 'new website', href: 'https://shop.mommylouisebudgetph.com/' },
 ]
 
 export function Header() {
