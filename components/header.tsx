@@ -6,10 +6,11 @@ import { Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const navigation = [
-  { label: 'Story', href: '/about-mommy-louise' },
-  { label: 'Collection', href: 'https://shop.mommylouisebudgetph.com/' },
-  { label: 'Journal', href: '/blog' },
-  { label: 'Community', href: '/gallery' },
+  { label: 'Home', href: '/' },
+  { label: 'Shop', href: '/products' },
+  { label: 'Gallery', href: '/gallery' },
+  { label: 'About', href: '/about-mommy-louise' },
+  { label: 'new website', href: 'https://shop.mommylouisebudgetph.com/' },
 ]
 
 export function Header() {
@@ -37,13 +38,17 @@ export function Header() {
           <div className="site-links">
             {navigation.map((item) => <Link key={item.label} href={item.href}>{item.label}</Link>)}
           </div>
-          <a href="https://shop.mommylouisebudgetph.com/" className="nav-cta">Shop <span>→</span></a>
+          <div className="site-nav-actions">
+            <Link href="/orders" className="nav-order-link">Orders</Link>
+            <a href="#contact" className="nav-cta">Start your journey</a>
+          </div>
           <button type="button" className="mobile-menu-toggle" aria-label={mobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'} aria-expanded={mobileMenuOpen} onClick={() => setMobileMenuOpen((open) => !open)}>{mobileMenuOpen ? <X size={20} /> : <Menu size={21} />}</button>
         </nav>
         <AnimatePresence>
           {mobileMenuOpen && <motion.div initial={{ opacity: 0, height: 0 }} animate={{ opacity: 1, height: 'auto' }} exit={{ opacity: 0, height: 0 }} transition={{ duration: 0.24 }} className="mobile-navigation">
             {navigation.map((item) => <Link href={item.href} key={item.label} onClick={() => setMobileMenuOpen(false)}>{item.label}</Link>)}
-            <a href="https://shop.mommylouisebudgetph.com/" className="premium-button">Shop collection</a>
+            <Link href="/orders" onClick={() => setMobileMenuOpen(false)}>Orders</Link>
+            <a href="#contact" onClick={() => setMobileMenuOpen(false)} className="premium-button">Start your journey</a>
           </motion.div>}
         </AnimatePresence>
       </motion.header>
