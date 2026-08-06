@@ -9,7 +9,7 @@ const shopUrl = 'https://shop.mommylouisebudgetph.com/'
 
 const stories = [
   { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: '/images/budget-binder-elegance.jpg' },
-  { title: 'Cash Envelopes', label: '02 / THE RITUAL', image: '/images/color-cream-envelope.jpg' },
+  { title: 'Inserts', label: '02 / THE RITUAL', image: '/images/color-cream-envelope.jpg' },
   { title: 'Savings Challenges', label: '03 / THE FUTURE', image: '/images/binder-elope-savings-challenge.png' },
   { title: 'Accessories', label: '04 / THE DETAILS', image: '/images/budget-accessories.jpg' },
 ]
