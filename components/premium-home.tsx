@@ -17,7 +17,7 @@ const stories = [
 const featuredPieces = [
   { title: 'The Everyday Edit', image: '/images/binder-pink-personalized-wallet.png', size: 'large' },
   { title: 'The Savings Ritual', image: '/images/binder-elope-challenge-accessories.png', size: 'small' },
-  { title: 'The Personal Touch', image: '/images/premium-personalized-wallet.jpg', size: 'small' },
+  { title: 'The Personal Touch', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Ffd246266eb26448cb1897ce6cf4cce61?format=webp&width=800&height=1200', size: 'small' },
 ]
 
 const fadeUp = {
