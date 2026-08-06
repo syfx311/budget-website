@@ -34,7 +34,7 @@ export function PremiumHome() {
         <div className="luxury-hero-overlay" />
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
           <p className="luxury-kicker">MOMMY LOUISE'S BUDGET PH</p>
-          <h1 id="luxury-hero-title"><span className="luxury-hero-word">Save</span><br /><span className="luxury-hero-script">Beautifully.</span></h1>
+          <h1 id="luxury-hero-title"><span className="luxury-hero-word">{'  '}Save</span><br /><span className="luxury-hero-script">Beautifully.</span></h1>
           <div className="luxury-hero-actions">
             <a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a>
           </div>
