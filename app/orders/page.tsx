@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
-import { Footer, Contact } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import { OrdersHero } from '@/components/orders/orders-hero'
 import { OrdersWelcome } from '@/components/orders/orders-welcome'
@@ -94,7 +94,6 @@ export default function OrdersPage() {
         <OrdersFeatures />
         <OrdersFAQ />
         <OrdersCTA />
-        <Contact />
         <Footer />
       </main>
     </>

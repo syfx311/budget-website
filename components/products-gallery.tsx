@@ -629,7 +629,7 @@ export function ProductsGallery() {
             asChild
             className="px-8 py-6 text-base"
           >
-            <Link href="#contact">Get Started Today</Link>
+            <Link href="/orders">Get Started Today</Link>
           </Button>
         </motion.div>
       </div>

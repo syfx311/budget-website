@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components/header'
 import { TabbedWalletLanding } from '@/components/tabbed-wallet-landing'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 
 export const metadata: Metadata = {
   title: 'Tabbed Long Wallet | Cash Stuffing Budget Wallet | Mommy Louise Budget PH',
@@ -43,7 +43,6 @@ export default function ComingSoonPage() {
       <Header />
       <div className="pt-16">
         <TabbedWalletLanding />
-        <Contact />
       </div>
       <Footer />
     </main>

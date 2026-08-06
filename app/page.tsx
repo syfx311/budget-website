@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
 import { PremiumHome } from '@/components/premium-home'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { MigrationAnnouncementModal } from '@/components/migration-announcement-modal'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import './luxury-home.css'
@@ -63,7 +63,6 @@ export default function Home() {
         <MigrationAnnouncementModal />
         <Header />
         <PremiumHome />
-        <Contact />
         <Footer />
       </main>
     </>

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import Link from 'next/link'
 import { Header } from '@/components/header'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
 
 export const metadata: Metadata = {
@@ -291,7 +291,6 @@ export default function BudgetBinderPage() {
             </section>
           </div>
         </div>
-        <Contact />
       </main>
       <Footer />
     </>

@@ -151,7 +151,7 @@ export function GalleryShowcase() {
           <p className="text-muted-foreground mb-8 max-w-xl mx-auto">
             Explore our full collection and find the perfect budget planner design for you.
           </p>
-          <a href="#contact" className="premium-button px-8">
+          <a href="/orders" className="premium-button px-8">
             Get In Touch
           </a>
         </motion.div>

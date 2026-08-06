@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Header } from '@/components/header'
 import { BinderCollectionPreview } from '@/components/binder-collection-preview'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
 
 export const metadata: Metadata = {
@@ -35,7 +35,6 @@ export default function BinderCollectionPage() {
       <Header />
       <div className="pt-20">
         <BinderCollectionPreview />
-        <Contact />
       </div>
       <Footer />
     </main>

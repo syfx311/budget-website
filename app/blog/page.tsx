@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
 import { BlogHome } from '@/components/blog-home'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getAllBlogPosts } from '@/lib/blog-posts'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import { breadcrumbSchema } from '@/lib/schema'
@@ -46,7 +46,6 @@ export default function BlogPage() {
         <Header />
         <div className="pt-20">
           <BlogHome posts={posts} />
-          <Contact />
         </div>
         <Footer />
       </main>
