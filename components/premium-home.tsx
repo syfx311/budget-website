@@ -30,7 +30,7 @@ export function PremiumHome() {
   return (
     <div className="luxury-home">
       <section className="luxury-hero relative" aria-labelledby="luxury-hero-title">
-        <video className="luxury-hero-image" src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29%2F57a41f9b6fc444fcaf8216a7f9545fc4?alt=media&token=4ecf5718-85c9-4697-9824-8ab2b5506dbf&apiKey=8c358e96430c4451949ddae1cc8ed29a" poster="/images/hero-background.jpg" autoPlay loop muted playsInline preload="auto" aria-hidden="true" />
+        <video className="luxury-hero-image" src="https://cdn.builder.io/o/assets%2F8c358e96430c4451949ddae1cc8ed29%2Fd27c286c118949dab2156b80f8a9dd27?alt=media&token=7b071db9-c3df-4e1a-9a52-b2f0eec84373&apiKey=8c358e96430c4451949ddae1cc8ed29a" poster="/images/hero-background.jpg" autoPlay loop muted playsInline preload="auto" aria-hidden="true" />
         <div className="luxury-hero-overlay" />
         <motion.div initial={{ opacity: 0, y: 28 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }} className="luxury-hero-copy">
           <p className="luxury-kicker">MOMMY LOUISE'S BUDGET PH</p>
