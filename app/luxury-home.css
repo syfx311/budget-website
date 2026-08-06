@@ -146,3 +146,4 @@
 .luxury-home ~ .premium-footer li a, .luxury-home ~ .premium-footer-brand p, .luxury-home ~ .premium-footer-newsletter p, .luxury-home ~ .premium-footer-bottom { color: hsl(4 27% 22% / .7); }
 .luxury-home ~ .premium-footer li a:hover { color: hsl(340 70% 58%); }
 .luxury-home ~ .premium-footer .premium-footer-newsletter .premium-text-link:hover { color: hsl(340 65% 65%) !important; }
+.luxury-home ~ .premium-footer .premium-footer-brand .footer-socials a:hover { color: hsl(340 65% 65%) !important; }
