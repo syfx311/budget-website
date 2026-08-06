@@ -383,8 +383,7 @@
 }
 
 @layer components {
-  .announcement-bar { @apply fixed top-0 z-50 flex h-7 w-full items-center justify-center bg-[#f6d9df] px-4 text-center text-[10px] font-medium uppercase tracking-[0.12em] text-[#222222]; }
-  .site-header { @apply fixed top-7 z-50 w-full border-b border-[#ece7e2]/80 bg-[#fffbf9]/90 backdrop-blur-xl; }
+  .site-header { @apply fixed top-0 z-50 w-full border-b border-[#ece7e2]/80 bg-[#fffbf9]/90 backdrop-blur-xl; }
   .site-nav { @apply mx-auto flex h-[72px] max-w-[1440px] items-center justify-between px-5 lg:px-10; }
   .brand-lockup { @apply flex items-center gap-2.5 text-[#222222]; }
   .brand-mark { @apply h-auto w-10 aspect-square rounded-full object-cover; }
@@ -620,15 +619,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-cormorant), var(--font-playfair), serif;
 }
 
-.announcement-bar {
-  background: hsl(340 80% 92%) !important;
-  color: hsl(4 27% 22%) !important;
-  font-family: var(--font-karla), var(--font-dm-sans), sans-serif;
-  font-weight: 300 !important;
-}
-
 .site-header {
-  top: 28px !important;
+  top: 0 !important;
   border: 0 !important;
   background: rgba(255, 255, 255, .9) !important;
   backdrop-filter: blur(10px) !important;

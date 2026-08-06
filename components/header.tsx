@@ -31,7 +31,6 @@ export function Header() {
 
   return (
     <>
-      <div className="announcement-bar">Free shipping on qualifying orders · Made with love in the Philippines</div>
       <motion.header animate={{ y: isVisible ? 0 : -120 }} transition={{ duration: 0.35, ease: 'easeOut' }} className={`site-header ${isScrolled ? 'site-header-scrolled' : ''}`}>
         <nav className="site-nav" aria-label="Primary navigation">
           <div className="site-links">
