@@ -38,7 +38,6 @@ export function PremiumHome() {
           <h1 id="luxury-hero-title">Save<br />Beautifully.</h1>
           <div className="luxury-hero-actions">
             <a href={shopUrl} className="luxury-button">Shop collection <ArrowUpRight size={15} /></a>
-            <Link href="/about-mommy-louise" className="luxury-quiet-link">Our story</Link>
           </div>
         </motion.div>
         <a className="luxury-scroll-cue" href="#designed" aria-label="Scroll to discover"><span>Scroll to discover</span><ArrowDown size={15} /></a>
