@@ -51,7 +51,7 @@ export function PremiumHome() {
           </motion.div>
           <motion.div className="luxury-binder-stage" initial={{ opacity: 0, rotate: -8, scale: 0.86 }} whileInView={{ opacity: 1, rotate: 0, scale: 1 }} viewport={{ once: true, amount: 0.2 }} transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}>
             <div className="luxury-binder-light" />
-            <Image src="/images/color-cream-open.jpg" alt="Open cream cash stuffing budget binder" width={1100} height={1100} sizes="(max-width: 767px) 90vw, 54vw" className="luxury-binder-image" />
+            <Image src="https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F2a392e27501a40d99c0112d9d58c31ce?format=webp&width=800&height=1200" alt="Pink sinking funds budget inserts" width={1100} height={1100} sizes="(max-width: 767px) 90vw, 54vw" className="luxury-binder-image" />
             <span className="luxury-film-detail luxury-detail-one">Made for the everyday</span>
             <span className="luxury-film-detail luxury-detail-two">Every peso, in its place</span>
           </motion.div>
