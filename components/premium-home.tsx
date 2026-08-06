@@ -65,13 +65,24 @@ export function PremiumHome() {
       <section className="luxury-stories" aria-label="Explore the collection">
         <div className="luxury-section-intro"><p className="luxury-kicker">The collection</p><span>Scroll to explore</span></div>
         <div className="luxury-story-rail">
-          {stories.map((story) => (
-            <a href={shopUrl} className="luxury-story-card relative" key={story.title}>
-              <Image src={story.image} alt={story.title} fill sizes="(max-width: 767px) 88vw, 72vw" className="luxury-story-image" />
-              <div className="luxury-story-wash" />
-              <div className="luxury-story-copy"><p>{story.label}</p><h2>{story.title}</h2><span>Discover <ArrowUpRight size={14} /></span></div>
-            </a>
-          ))}
+          <div className="luxury-story-track">
+            {stories.map((story) => (
+              <a href={shopUrl} className="luxury-story-card relative" key={story.title}>
+                <Image src={story.image} alt={story.title} fill sizes="(max-width: 767px) 88vw, 72vw" className="luxury-story-image" />
+                <div className="luxury-story-wash" />
+                <div className="luxury-story-copy"><p>{story.label}</p><h2>{story.title}</h2><span>Discover <ArrowUpRight size={14} /></span></div>
+              </a>
+            ))}
+            <div className="luxury-story-marquee-copy" aria-hidden="true">
+              {stories.map((story) => (
+                <a href={shopUrl} className="luxury-story-card relative" key={`marquee-${story.title}`} tabIndex={-1}>
+                  <Image src={story.image} alt="" fill sizes="(max-width: 767px) 88vw, 72vw" className="luxury-story-image" />
+                  <div className="luxury-story-wash" />
+                  <div className="luxury-story-copy"><p>{story.label}</p><h2>{story.title}</h2><span>Discover <ArrowUpRight size={14} /></span></div>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
