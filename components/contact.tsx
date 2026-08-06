@@ -19,7 +19,6 @@ export function Contact() {
 
 export function Footer() {
   const footerGroups = [
-    { title: 'Shop', links: [{ label: 'All Products', href: '/products' }, { label: 'Best Sellers', href: '/products' }, { label: 'New Arrivals', href: '/products' }, { label: 'Personalized Pieces', href: '/products' }] },
     { title: 'Explore', links: [{ label: 'Budget App', href: '/app' }, { label: 'Gallery', href: '/gallery' }, { label: 'Journal', href: '/blog' }, { label: 'Our Story', href: '/about-mommy-louise' }] },
     { title: 'Support', links: [{ label: 'Cash Stuffing Guide', href: '/cash-stuffing-philippines' }, { label: 'Budget Binders', href: '/budget-binder-philippines' }, { label: 'Savings Challenges', href: '/savings-challenge-philippines' }] },
   ]
