@@ -104,6 +104,7 @@
 .luxury-kicker { color: hsl(340 65% 65%); font-weight: 500; letter-spacing: .3em; }
 .luxury-hero-overlay { background: linear-gradient(90deg, hsl(24 60% 97% / .92) 0%, hsl(24 60% 97% / .68) 36%, hsl(24 60% 97% / .08) 74%); }
 .luxury-hero h1 { font-weight: 500; }
+.luxury-hero-script { display: inline-block; margin-top: -0.08em; color: hsl(340 65% 65%); font-family: 'Brittany Signature', cursive; font-size: 0.72em; font-weight: 400; letter-spacing: 0; line-height: 0.85; transform: rotate(-4deg); transform-origin: left center; }
 .luxury-button { border-color: hsl(340 65% 65%); background: hsl(340 65% 65%); color: #fff; font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .04em; text-transform: none; transition-duration: 250ms; }
 .luxury-button:hover { border-color: hsl(340 70% 58%); background: hsl(340 70% 58%); color: #fff; transform: translateY(-2px); }
 .luxury-quiet-link { color: hsl(4 27% 22%); font-family: var(--font-karla), var(--font-dm-sans), sans-serif; font-weight: 500; letter-spacing: .02em; text-transform: none; transition: color 200ms ease, opacity 200ms ease; }
