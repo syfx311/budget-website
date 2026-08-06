@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
 import { GalleryShowcase } from '@/components/gallery-showcase'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
 
 export const metadata: Metadata = {
@@ -64,7 +64,6 @@ export default function GalleryPage() {
         <Header />
         <div className="pt-20">
           <GalleryShowcase />
-          <Contact />
         </div>
         <Footer />
       </main>

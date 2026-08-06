@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
 import { ProductsGallery } from '@/components/products-gallery'
-import { Contact, Footer } from '@/components/contact'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import { breadcrumbSchema } from '@/lib/schema'
 
@@ -43,7 +43,6 @@ export default function ProductsPage() {
         <Header />
         <div className="pt-20">
           <ProductsGallery />
-          <Contact />
         </div>
         <Footer />
       </main>

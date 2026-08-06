@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import Script from 'next/script'
 import { Header } from '@/components/header'
 import { PremiumHome } from '@/components/premium-home'
-import { Contact, Footer } from '@/components/contact'
-import { MigrationAnnouncementModal } from '@/components/migration-announcement-modal'
+import { Footer } from '@/components/contact'
 import { getCanonicalMetadata } from '@/lib/canonical'
+import './luxury-home.css'
 
 const faqSchema = {
   '@context': 'https://schema.org',
@@ -59,10 +59,8 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <main className="min-h-screen">
-        <MigrationAnnouncementModal />
         <Header />
         <PremiumHome />
-        <Contact />
         <Footer />
       </main>
     </>

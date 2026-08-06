@@ -141,7 +141,7 @@ export function DesignLibraryShowcase({ images }: DesignLibraryShowcaseProps) {
             asChild
             className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg"
           >
-            <Link href="#contact" className="flex items-center gap-2">
+            <Link href="/orders" className="flex items-center gap-2">
               <Heart className="w-4 h-4" />
               Order Custom Design
             </Link>
