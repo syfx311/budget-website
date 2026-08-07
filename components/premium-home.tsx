@@ -5,6 +5,7 @@ import { ArrowDown, ArrowUpRight } from 'lucide-react'
 import { motion } from 'framer-motion'
 
 const shopUrl = 'https://shop.mommylouisebudgetph.com/'
+const cashStuffingStoriesUrl = 'https://shop.mommylouisebudgetph.com/stories'
 
 const stories = [
   { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: '/images/budget-binder-elegance.jpg' },
@@ -99,7 +100,7 @@ export function PremiumHome() {
 
       <section className="luxury-community" aria-labelledby="community-title">
         <div className="luxury-community-photo relative"><Image src="/images/binder-planner-flatlay-collection.png" alt="A considered cash stuffing ritual" fill sizes="(max-width: 767px) 100vw, 50vw" className="luxury-community-image" /></div>
-        <div className="luxury-community-copy"><p className="luxury-kicker">Our community</p><h2 id="community-title">For the life<br />you&apos;re building.</h2><div className="luxury-names"><span>“Aira M.”</span><span>“Kris A.”</span><span>“Marisa L.”</span></div></div>
+        <div className="luxury-community-copy"><p className="luxury-kicker">Our community</p><h2 id="community-title">For the life<br />you&apos;re building.</h2><div className="luxury-names"><span>“Aira M.”</span><span>“Kris A.”</span><span>“Marisa L.”</span></div><a href={cashStuffingStoriesUrl} className="luxury-quiet-link">Cash Stuffing Stories <ArrowUpRight size={14} /></a></div>
       </section>
 
       <section className="luxury-final-cta relative" aria-labelledby="final-cta-title">
