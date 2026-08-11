@@ -8,9 +8,9 @@ const shopUrl = 'https://shop.mommylouisebudgetph.com/'
 const cashStuffingStoriesUrl = 'https://shop.mommylouisebudgetph.com/stories'
 
 const stories = [
-  { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: '/images/budget-binder-elegance.jpg' },
+  { title: 'Budget Binder', label: '01 / THE FOUNDATION', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Fcaf5472c15b5429fb3d472823b994305?format=webp&width=800&height=1200' },
   { title: 'Inserts', label: '02 / THE RITUAL', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F533dd43327394981beb18ad6f1071f2c?format=webp&width=800&height=1200' },
-  { title: 'Savings Challenges', label: '03 / THE FUTURE', image: '/images/binder-elope-savings-challenge.png' },
+  { title: 'Savings Challenges', label: '03 / THE FUTURE', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2Feed286f09b804e6d84234018eb0fb775?format=webp&width=800&height=1200' },
   { title: 'Accessories', label: '04 / THE DETAILS', image: 'https://cdn.builder.io/api/v1/image/assets%2F8c358e96430c4451949ddae1cc8ed29a%2F36e9fdc418dd457ca4be4ac83377ee54?format=webp&width=800&height=1200' },
 ]
 
