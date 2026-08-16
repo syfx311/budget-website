@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 const navigation = [
   { label: 'Home', href: '/' },
   { label: 'Shop', href: 'https://shop.mommylouisebudgetph.com/' },
+  { label: 'App', href: 'https://app.mommylouisebudgetph.com/login' },
 ]
 
 export function Header() {
