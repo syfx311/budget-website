@@ -3,7 +3,6 @@ import { Geist, Playfair_Display, Cormorant_Garamond, Karla, Dancing_Script, Not
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import { BackToTop } from '@/components/back-to-top'
-import { BuyMeACoffee } from '@/components/buy-me-a-coffee'
 import { organizationSchema, breadcrumbSchema, websiteSearchSchema } from '@/lib/schema'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import './globals.css'
@@ -128,7 +127,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSearchSchema) }}
         />
-        <BuyMeACoffee />
         {children}
         <BackToTop />
         {process.env.NODE_ENV === 'production' && <Analytics />}
