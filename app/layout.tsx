@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next'
 import { Geist, Playfair_Display, Cormorant_Garamond, Karla, Dancing_Script, Noto_Sans_Adlam, Noto_Sans, DM_Sans, Allura, Grand_Hotel } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import { SpeedInsights } from '@vercel/speed-insights/next'
-import Script from 'next/script'
 import { BackToTop } from '@/components/back-to-top'
+import { BuyMeACoffee } from '@/components/buy-me-a-coffee'
 import { organizationSchema, breadcrumbSchema, websiteSearchSchema } from '@/lib/schema'
 import { getCanonicalMetadata } from '@/lib/canonical'
 import './globals.css'
@@ -128,19 +128,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSearchSchema) }}
         />
-        <Script
-          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
-          strategy="afterInteractive"
-          data-name="BMC-Widget"
-          data-cfasync="false"
-          data-id="mommylouisebudgetph"
-          data-description="Support me on Buy me a coffee!"
-          data-message=""
-          data-color="#F471FF"
-          data-position="Right"
-          data-x_margin="18"
-          data-y_margin="18"
-        />
+        <BuyMeACoffee />
         {children}
         <BackToTop />
         {process.env.NODE_ENV === 'production' && <Analytics />}
