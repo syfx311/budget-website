@@ -114,7 +114,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background">
-      <head>
+      <body className={`${geist.variable} ${playfair.variable} ${cormorant.variable} ${karla.variable} ${dancingScript.variable} ${notoSansAdlam.variable} ${notoSans.variable} ${dmSans.variable} ${allura.variable} ${grandHotel.variable} font-sans antialiased`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -127,8 +127,6 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSearchSchema) }}
         />
-      </head>
-      <body className={`${geist.variable} ${playfair.variable} ${cormorant.variable} ${karla.variable} ${dancingScript.variable} ${notoSansAdlam.variable} ${notoSans.variable} ${dmSans.variable} ${allura.variable} ${grandHotel.variable} font-sans antialiased`}>
         {children}
         <BackToTop />
         {process.env.NODE_ENV === 'production' && <Analytics />}
